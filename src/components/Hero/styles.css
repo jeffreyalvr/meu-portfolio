@@ -1,5 +1,5 @@
 .hero {
-  height: 650px;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(360deg, #22f9b8 0%, #505050 100%);
   padding: 200px 0 0 0;
@@ -23,7 +23,7 @@
 .hero h2 {
   text-transform: uppercase;
   font-size: 50px;
-  color: #117255;
+  color: #87d2bc;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -59,5 +59,5 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 50px;
+  bottom: 200px;
 }
