@@ -7,3 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  color: #76ffd6;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
