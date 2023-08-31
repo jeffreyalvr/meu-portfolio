@@ -5,7 +5,7 @@
 
 ::selection {
   color: #fff;
-  background: #878787;
+  background: #000;
   -webkit-text-fill-color: #fff !important;
 }
 
@@ -16,12 +16,7 @@
   letter-spacing: 0.02rem;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background: linear-gradient(130deg, #fff 0%, #e2e2e2 50%, #fff 100%);
   background-attachment: fixed;
-  min-height: 100%;
 }

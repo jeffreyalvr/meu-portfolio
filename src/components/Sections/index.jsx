@@ -15,7 +15,7 @@ import MinhaStack from "../MinhaStack";
 
 const Sections = ({ linkedin_url }) => {
   return (
-    <main>
+    <>
       <section>
         <Title>Trabalhos</Title>
         <SubTitle>
@@ -54,7 +54,7 @@ const Sections = ({ linkedin_url }) => {
         </SubTitle>
         <MinhaStack />
       </section>
-    </main>
+    </>
   );
 };
 

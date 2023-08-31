@@ -59,3 +59,28 @@ section .bio .action-buttons img {
   height: 24px;
   width: 24px;
 }
+
+@media screen and (max-width: 1000px) {
+  section .bio {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section .bio {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section .bio .action-buttons {
+    margin: 15px 0;
+  }
+  section .stack {
+    justify-content: center;
+  }
+}

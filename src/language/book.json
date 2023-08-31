@@ -10,6 +10,25 @@
         "nav_item_about": "sobre",
         "nav_item_contact": "contato",
         "nav_item_stack": "Stack"
+      },
+      "work": {
+        "?": "Trabalhos",
+        "?": "Abaixo você pode ver todos os projetos que demostram o que eu posso lhe oferecer com o meu conhecimento."
+      },
+      "about": {
+        "?": "Sobre",
+        "?": "Conheça toda a minha jornada até o momento atual.",
+        "?": "Brasileiro",
+        "?": "Falante de Português, Inglês e Francês.",
+        "?": "Desenvolvedor WEB.",
+        "?": "Início da graduação em Ciências da Computação",
+        "?": "Estágio na Fábrica de Software - UNIPÊ",
+        "?": "Início da pós-graduação em Desenvolvimento para Aplicações Web",
+        "?": "Lançamento do site e portfólio"
+      },
+      "stack": {
+        "nav_item_homepage": "Stack",
+        "nav_item_work": "Estas são todas as ferramentas das quais possuo experiência de uso."
       }
     },
     "hero": {
@@ -26,10 +45,29 @@
     "nav": {
       "index": {
         "nav_item_homepage": "home",
-        "nav_item_work": "work",
+        "nav_item_work": "works",
         "nav_item_about": "about",
         "nav_item_contact": "contact",
         "nav_item_stack": "Stack"
+      },
+      "work": {
+        "?": "Works",
+        "?": "Bellow you can find a few projects which showcase what I can bring to the table."
+      },
+      "about": {
+        "?": "About",
+        "?": "Get to know my journey up to this moment.",
+        "?": "Brazilian",
+        "?": "Speaks Portuguese, English and French.",
+        "?": "WEB Developer.",
+        "?": "Began Computer Science",
+        "?": "Internship in Fábrica de Software - UNIPÊ",
+        "?": "Began Web Applications Development",
+        "?": "Released my website and portfolio online"
+      },
+      "stack": {
+        "?": "Stack",
+        "?": "These are all the tools I'm experienced with."
       }
     },
     "hero": {
