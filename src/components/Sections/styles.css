@@ -24,9 +24,16 @@ section .bio img {
 
 section .bio .description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   flex-grow: 2;
+}
+
+section .bio .description .main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  gap: 20px;
 }
 
 section .bio .description .tag span.title {
@@ -48,14 +55,14 @@ section .bio .description span {
   font-size: 20px;
 }
 
-section .bio .action-buttons {
+section .bio .description .action-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 15px;
 }
 
-section .bio .action-buttons img {
+section .bio .description .action-buttons img {
   height: 24px;
   width: 24px;
 }
@@ -63,6 +70,15 @@ section .bio .action-buttons img {
 @media screen and (max-width: 1000px) {
   section .bio {
     flex-wrap: wrap;
+  }
+  section .bio .description {
+    flex-direction: column;
+  }
+  section .bio .description .action-buttons {
+    margin: 20px 0 0 0;
+  }
+  section .bio .description .action-buttons a {
+    max-width: max-content;
   }
 }
 
@@ -74,12 +90,12 @@ section .bio .action-buttons img {
     align-items: center;
     gap: 50px;
   }
+  section .bio .description .action-buttons {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  section .bio .action-buttons {
-    margin: 15px 0;
-  }
   section .stack {
     justify-content: center;
   }

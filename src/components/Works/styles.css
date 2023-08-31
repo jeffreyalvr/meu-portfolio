@@ -12,8 +12,19 @@
 .works .work-item {
   background-color: #ccc;
   border: 2px solid #ccc;
-  height: 200px;
+  height: 325px;
+  width: 350px;
   position: relative;
   flex: 1 1 auto;
   padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .works {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .works .work-item {
+    width: 100%;
+  }
 }

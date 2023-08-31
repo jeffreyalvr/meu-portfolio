@@ -31,17 +31,19 @@ const Sections = ({ linkedin_url }) => {
         <div className="bio">
           <img src={img_profile} title="Jeffrey" alt="Foto" />
           <div className="description">
-            <div className="tag">
-              <span className="title">Jeffrey, 27</span>
+            <div className="main">
+              <div className="tag">
+                <span className="title">Jeffrey, 27</span>
+              </div>
+              <div className="additional">
+                <span>Brasileiro.</span>
+                <span>Falante de Português, Inglês e Francês.</span>
+                <span>Desenvolvedor WEB.</span>
+              </div>
             </div>
-            <div className="additional">
-              <span>Brasileiro.</span>
-              <span>Falante de Português, Inglês e Francês.</span>
-              <span>Desenvolvedor WEB.</span>
+            <div className="action-buttons">
+              <Button text="LinkedIn" icon={img_linkedin} url={linkedin_url} />
             </div>
-          </div>
-          <div className="action-buttons">
-            <Button text="LinkedIn" icon={img_linkedin} url={linkedin_url} />
           </div>
         </div>
         <Roadmap />
