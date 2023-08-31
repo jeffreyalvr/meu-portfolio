@@ -5,15 +5,12 @@ import book from "../../language/book.json";
 
 import "./styles.css";
 
-import linkedin from "../../assets/images/linkedin.png";
-import github from "../../assets/images/github.png";
+import img_linkedin from "../../assets/images/linkedin.png";
+import img_github from "../../assets/images/github.png";
 
 import Button from "../Button";
 
-const Hero = ({ children }) => {
-  const linkedin_url = "https://www.linkedin.com/in/jeffreyalvr/";
-  const github_url = "https://github.com/jeffreyalvr";
-
+const Hero = ({ children, linkedin_url, github_url }) => {
   const { lang } = useContext(LanguageContext);
 
   return (
@@ -33,8 +30,8 @@ const Hero = ({ children }) => {
         </div>
 
         <div className="action-buttons">
-          <Button text="LinkedIn" icon={linkedin} url={linkedin_url} />
-          <Button text="GitHub" icon={github} url={github_url} />
+          <Button text="LinkedIn" icon={img_linkedin} url={linkedin_url} />
+          <Button text="GitHub" icon={img_github} url={github_url} />
         </div>
       </div>
     </div>

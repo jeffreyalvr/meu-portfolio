@@ -65,7 +65,7 @@
   border-radius: 3px;
 }
 
-.action-buttons {
+.hero .container .action-buttons {
   display: flex;
   flex-direction: action-buttons;
   justify-content: space-between;
@@ -179,7 +179,7 @@
   .hero .container h1 span {
     margin: 0;
   }
-  .action-buttons {
+  .hero .container .action-buttons {
     flex-direction: column;
   }
 }
