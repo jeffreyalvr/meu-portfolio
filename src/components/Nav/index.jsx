@@ -36,6 +36,11 @@ const Nav = () => {
         </div>
         <div className="item">
           {lang === "pt-br"
+            ? book.pt_br.nav.index.nav_item_stack
+            : book.en_ca.nav.index.nav_item_stack}
+        </div>
+        <div className="item">
+          {lang === "pt-br"
             ? book.pt_br.nav.index.nav_item_about
             : book.en_ca.nav.index.nav_item_about}
         </div>

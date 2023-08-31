@@ -1,0 +1,38 @@
+.stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  gap: 30px;
+}
+
+.stack .stack-item {
+  background-color: transparent;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stack .stack-item img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stack .stack-item + .hidden {
+  display: none;
+}
+
+.stack .stack-item span {
+  font-size: 14px;
+  color: #878787;
+  width: 100%;
+  text-align: center;
+}

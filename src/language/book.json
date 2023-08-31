@@ -8,7 +8,8 @@
         "nav_item_homepage": "início",
         "nav_item_work": "trabalhos",
         "nav_item_about": "sobre",
-        "nav_item_contact": "contato"
+        "nav_item_contact": "contato",
+        "nav_item_stack": "Stack"
       }
     },
     "hero": {
@@ -27,7 +28,8 @@
         "nav_item_homepage": "home",
         "nav_item_work": "work",
         "nav_item_about": "about",
-        "nav_item_contact": "contact"
+        "nav_item_contact": "contact",
+        "nav_item_stack": "Stack"
       }
     },
     "hero": {

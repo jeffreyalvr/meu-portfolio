@@ -9,7 +9,7 @@ const Roadmap = () => {
         <div className="signal">o</div>
         <div className="signal-date">2015</div>
         <div className="signal-description">
-          Graduação em Ciências da Computação
+          Início da graduação em Ciências da Computação
         </div>
       </div>
       <div className="path"></div>
@@ -25,8 +25,14 @@ const Roadmap = () => {
         <div className="signal">o</div>
         <div className="signal-date">2020</div>
         <div className="signal-description">
-          Pós-Graduação em Desenvolvimento de Aplicações Web
+          Início da pós-graduação em Desenvolvimento para Aplicações Web
         </div>
+      </div>
+      <div className="path now"></div>
+      <div className="road-item">
+        <div className="signal now">o</div>
+        <div className="signal-date">2023</div>
+        <div className="signal-description">Lançamento do site e portfólio</div>
       </div>
     </div>
   );
