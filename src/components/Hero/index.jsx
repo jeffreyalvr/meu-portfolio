@@ -39,7 +39,7 @@ const Hero = ({ children }) => {
           <Button text="GitHub" icon={github} url={github_url} />
         </div>
 
-        <Footer book={book} lang={lang} />
+        <Footer />
       </div>
     </div>
   );

@@ -5,8 +5,9 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 50px;
+  gap: 30px;
 }
 
 nav .links,
@@ -19,7 +20,7 @@ nav .links,
 }
 
 nav .links {
-  margin: 0 20px 0 0;
+  gap: 10px;
 }
 
 nav .languages .item {
@@ -36,32 +37,44 @@ nav .languages .item img {
 }
 
 nav .links .item {
-  padding: 8px 20px;
-  margin: 0 5px;
   color: #3d3d3d;
+  border: 1px solid transparent;
   background-color: transparent;
   border-radius: 50px;
   text-transform: uppercase;
   transition: ease-in 0.2s;
+  padding: 8px 20px;
 }
 
 nav .links .item.active {
-  background-color: #7d7d7d30;
-  color: #3d3d3d;
+  background-color: #000;
+  color: #fff;
+  cursor: default !important;
+  border: 1px solid #000;
 }
 
 nav .links .item:hover {
-  background-color: #49494930;
-}
-
-nav .links .item a:link,
-nav .links .item a:visited,
-nav .links .item a:active {
-  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
 nav .links .item a:hover {
-  color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0 30px 0;
+  }
+
+  nav .links {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 550px) {

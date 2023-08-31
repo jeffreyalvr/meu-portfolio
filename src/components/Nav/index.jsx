@@ -29,6 +29,21 @@ const Nav = () => {
             ? book.pt_br.nav.index.nav_item_homepage
             : book.en_ca.nav.index.nav_item_homepage}
         </div>
+        <div className="item">
+          {lang === "pt-br"
+            ? book.pt_br.nav.index.nav_item_work
+            : book.en_ca.nav.index.nav_item_work}
+        </div>
+        <div className="item">
+          {lang === "pt-br"
+            ? book.pt_br.nav.index.nav_item_about
+            : book.en_ca.nav.index.nav_item_about}
+        </div>
+        <div className="item">
+          {lang === "pt-br"
+            ? book.pt_br.nav.index.nav_item_contact
+            : book.en_ca.nav.index.nav_item_contact}
+        </div>
       </div>
       <div className="languages">
         <div
