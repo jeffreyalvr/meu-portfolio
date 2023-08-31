@@ -1,7 +1,7 @@
 nav {
   height: 80px;
   width: 100%;
-  background-color: #505050;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -15,6 +15,7 @@ nav .links,
   display: flex;
   flex-direction: row;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 nav .links {
@@ -35,22 +36,22 @@ nav .languages .item img {
 }
 
 nav .links .item {
-  padding: 8px 15px;
+  padding: 8px 20px;
   margin: 0 5px;
-  color: #fff;
+  color: #3d3d3d;
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 50px;
   text-transform: uppercase;
-  cursor: pointer;
+  transition: ease-in 0.2s;
 }
 
 nav .links .item.active {
-  background-color: rgba(108, 212, 131, 0.19);
-  color: #22f9b8;
+  background-color: #7d7d7d30;
+  color: #3d3d3d;
 }
 
 nav .links .item:hover {
-  background-color: rgba(108, 212, 131, 0.19);
+  background-color: #49494930;
 }
 
 nav .links .item a:link,
@@ -60,5 +61,11 @@ nav .links .item a:active {
 }
 
 nav .links .item a:hover {
-  color: #22f9b8;
+  color: #000;
+}
+
+@media screen and (max-width: 550px) {
+  nav {
+    justify-content: center;
+  }
 }

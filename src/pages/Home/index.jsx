@@ -1,20 +1,18 @@
+import React, { useState } from "react";
+import { LanguageContext } from "../../Contexts/LanguageContext";
+
 import Nav from "../../components/Nav";
 import Hero from "../../components/Hero";
-import Section from "../../components/Section";
-import Footer from "../../components/Footer";
 
 const Home = () => {
+  const [lang, setLang] = useState("pt-br"); /* INFO: pt-br || en-ca */
+
   return (
-    <div className="wrapper">
-      <Nav />
-      <Hero />
-      <Section
-        title="Uma section qualquer"
-        description="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        variant="light"
-      />
-      <Footer />
-    </div>
+    <LanguageContext.Provider value={{ lang, setLang }}>
+      <Hero>
+        <Nav />
+      </Hero>
+    </LanguageContext.Provider>
   );
 };
 

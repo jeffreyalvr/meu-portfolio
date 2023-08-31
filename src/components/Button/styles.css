@@ -1,0 +1,30 @@
+.button,
+button {
+  padding: 15px 30px;
+  color: #000;
+  background-color: #00000000;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #3d3d3d;
+  outline: none;
+  text-decoration: none;
+  transition: ease-in 0.2s;
+}
+
+.button:hover,
+button:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.button:active,
+button:active {
+  background-color: #e1e1e1;
+}
+
+.button img,
+button img {
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}

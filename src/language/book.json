@@ -1,0 +1,34 @@
+{
+  "pt_br": {
+    "pages": {
+      "title": "Olá, sou o Jeffrey!"
+    },
+    "nav": {
+      "index": {
+        "nav_item_homepage": "início"
+      }
+    },
+    "hero": {
+      "index": {
+        "hero_h1": "Olá, sou o",
+        "hero_footer_span": "Este site ainda está em desenvolvimento."
+      }
+    }
+  },
+  "en_ca": {
+    "pages": {
+      "title": "Hi, I'm Jeffrey!"
+    },
+    "nav": {
+      "index": {
+        "nav_item_homepage": "home"
+      }
+    },
+    "hero": {
+      "index": {
+        "hero_h1": "Hi, I'm",
+        "hero_footer_span": "This website is still under development."
+      }
+    }
+  }
+}
