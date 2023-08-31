@@ -5,9 +5,7 @@ import "./styles.css";
 const Footer = () => {
   return (
     <footer className="move-up">
-      <div className="col">
-        <span>&copy; 2023 - Jeffrey.</span>
-      </div>
+      <span>&copy; 2023 - Jeffrey.</span>
     </footer>
   );
 };

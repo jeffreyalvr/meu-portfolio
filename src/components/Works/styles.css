@@ -1,0 +1,19 @@
+.works {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.works .work-item {
+  background-color: #ccc;
+  border: 2px solid #ccc;
+  height: 200px;
+  position: relative;
+  flex: 1 1 auto;
+  padding: 20px;
+}

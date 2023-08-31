@@ -10,8 +10,6 @@ import github from "../../assets/images/github.png";
 
 import Button from "../Button";
 
-import Footer from "../Footer";
-
 const Hero = ({ children }) => {
   const linkedin_url = "https://www.linkedin.com/in/jeffreyalvr/";
   const github_url = "https://github.com/jeffreyalvr";
@@ -34,12 +32,10 @@ const Hero = ({ children }) => {
           <div className="carrot" />
         </div>
 
-        <div className="row">
+        <div className="action-buttons">
           <Button text="LinkedIn" icon={linkedin} url={linkedin_url} />
           <Button text="GitHub" icon={github} url={github_url} />
         </div>
-
-        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,36 @@
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 40px 0;
+}
+
+.roadmap .road-item {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.roadmap .road-item .signal {
+  font-size: 16px;
+  color: #878787;
+  font-weight: bold;
+}
+
+.roadmap .path {
+  border-right: 5px dotted #b8b8b8;
+  height: 30px;
+  width: 5px;
+  padding: 0 0 0 3px;
+}
+
+.roadmap .road-item .signal-date {
+  font-size: 16px;
+  color: #983d3d;
+  padding: 0 15px 0 0;
+}
+
+.roadmap .road-item .signal-description {
+  font-size: 18px;
+}
