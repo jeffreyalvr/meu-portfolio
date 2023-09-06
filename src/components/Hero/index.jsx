@@ -18,9 +18,7 @@ const Hero = ({ children, linkedin_url, github_url }) => {
       {children}
       <div className="container move-up">
         <h1>
-          {lang === "pt-br"
-            ? book.pt_br.hero.index.hero_h1
-            : book.en_ca.hero.index.hero_h1}
+          {lang === "pt-br" ? book.pt_br.hero.hero_h1 : book.en_ca.hero.hero_h1}
           <span>{"{ Jeffrey }"}</span>
         </h1>
 

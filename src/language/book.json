@@ -4,38 +4,32 @@
       "title": "Olá, sou o Jeffrey!"
     },
     "nav": {
-      "index": {
-        "nav_item_homepage": "início",
-        "nav_item_work": "trabalhos",
-        "nav_item_about": "sobre",
-        "nav_item_contact": "contato",
-        "nav_item_stack": "Stack"
-      },
-      "work": {
-        "?": "Trabalhos",
-        "?": "Abaixo você pode ver todos os projetos que demostram o que eu posso lhe oferecer com o meu conhecimento."
-      },
-      "about": {
-        "?": "Sobre",
-        "?": "Conheça toda a minha jornada até o momento atual.",
-        "?": "Brasileiro",
-        "?": "Falante de Português, Inglês e Francês.",
-        "?": "Desenvolvedor WEB.",
-        "?": "Início da graduação em Ciências da Computação",
-        "?": "Estágio na Fábrica de Software - UNIPÊ",
-        "?": "Início da pós-graduação em Desenvolvimento para Aplicações Web",
-        "?": "Lançamento do site e portfólio"
-      },
-      "stack": {
-        "nav_item_homepage": "Stack",
-        "nav_item_work": "Estas são todas as ferramentas das quais possuo experiência de uso."
-      }
+      "nav_item_homepage": "início",
+      "nav_item_work": "trabalhos",
+      "nav_item_about": "sobre",
+      "nav_item_contact": "contato",
+      "nav_item_stack": "Stack"
+    },
+    "sections": {
+      "sec_works_title": "Trabalhos",
+      "sec_works_subtitle": "Abaixo você pode ver todos os projetos que demostram o que eu posso lhe oferecer com o meu conhecimento.",
+      "sec_about_title": "Sobre",
+      "sec_about_subtitle": "Conheça toda a minha jornada até o momento atual.",
+      "sec_about_span_nationality": "Brasileiro",
+      "sec_about_span_spoken_languages": "Falante de Português, Inglês e Francês.",
+      "sec_about_span_role": "Desenvolvedor WEB.",
+      "sec_stack_title": "Stack",
+      "sec_stack_subtitle": "Estas são todas as ferramentas das quais possuo experiência de uso."
+    },
+    "roadmap": {
+      "rm_span_1": "Início da graduação em Ciências da Computação",
+      "rm_span_2": "Estágio na Fábrica de Software - UNIPÊ",
+      "rm_span_3": "Início da pós-graduação em Desenvolvimento para Aplicações Web",
+      "rm_span_4": "Lançamento do site e portfólio"
     },
     "hero": {
-      "index": {
-        "hero_h1": "Olá, sou o",
-        "hero_footer_span": "Este site ainda está em desenvolvimento."
-      }
+      "hero_h1": "Olá, sou o",
+      "hero_footer_span": "Este site ainda está em desenvolvimento."
     }
   },
   "en_ca": {
@@ -43,37 +37,31 @@
       "title": "Hi, I'm Jeffrey!"
     },
     "nav": {
-      "index": {
-        "nav_item_homepage": "home",
-        "nav_item_work": "works",
-        "nav_item_about": "about",
-        "nav_item_contact": "contact",
-        "nav_item_stack": "Stack"
-      },
-      "work": {
-        "?": "Works",
-        "?": "Bellow you can find a few projects which showcase what I can bring to the table."
-      },
-      "about": {
-        "?": "About",
-        "?": "Get to know my journey up to this moment.",
-        "?": "Brazilian",
-        "?": "Speaks Portuguese, English and French.",
-        "?": "WEB Developer.",
-        "?": "Began Computer Science",
-        "?": "Internship in Fábrica de Software - UNIPÊ",
-        "?": "Began Web Applications Development",
-        "?": "Released my website and portfolio online"
-      },
-      "stack": {
-        "?": "Stack",
-        "?": "These are all the tools I'm experienced with."
-      }
+      "nav_item_homepage": "home",
+      "nav_item_work": "works",
+      "nav_item_about": "about",
+      "nav_item_contact": "contact",
+      "nav_item_stack": "Stack"
+    },
+    "sections": {
+      "sec_works_title": "Works",
+      "sec_works_subtitle": "Bellow you can find a few projects which showcase what I can bring to the table.",
+      "sec_about_title": "About",
+      "sec_about_subtitle": "Get to know my journey up to this moment.",
+      "sec_about_span_nationality": "Brazilian",
+      "sec_about_span_spoken_languages": "Speaks Portuguese, English and French.",
+      "sec_about_span_role": "WEB Developer.",
+      "sec_stack_title": "Stack",
+      "sec_stack_subtitle": "These are all the tools I'm experienced with."
+    },
+    "roadmap": {
+      "rm_span_1": "Began studying Computer Science",
+      "rm_span_2": "Internship in Fábrica de Software - UNIPÊ",
+      "rm_span_3": "Began studying Web Applications Development",
+      "rm_span_4": "Released my website and portfolio online"
     },
     "hero": {
-      "index": {
-        "hero_h1": "Hi, I'm"
-      }
+      "hero_h1": "Hi, I'm"
     }
   }
 }
