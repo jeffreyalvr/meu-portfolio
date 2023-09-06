@@ -17,6 +17,11 @@
   position: relative;
   flex: 1 1 auto;
   padding: 20px;
+  transition: ease-in 0.2s;
+}
+
+.works .work-item:hover {
+  background-color: #bcbcbc;
 }
 
 @media screen and (max-width: 900px) {
