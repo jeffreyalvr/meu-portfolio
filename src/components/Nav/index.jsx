@@ -23,47 +23,49 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="links">
-        <div className="item active">
-          {lang === "pt-br"
-            ? book.pt_br.nav.nav_item_homepage
-            : book.en_ca.nav.nav_item_homepage}
+      <div className="nav-container">
+        <div className="links">
+          <div className="item active">
+            {lang === "pt-br"
+              ? book.pt_br.nav.nav_item_homepage
+              : book.en_ca.nav.nav_item_homepage}
+          </div>
+          <div className="item">
+            {lang === "pt-br"
+              ? book.pt_br.nav.nav_item_work
+              : book.en_ca.nav.nav_item_work}
+          </div>
+          <div className="item">
+            {lang === "pt-br"
+              ? book.pt_br.nav.nav_item_about
+              : book.en_ca.nav.nav_item_about}
+          </div>
+          <div className="item">
+            {lang === "pt-br"
+              ? book.pt_br.nav.nav_item_stack
+              : book.en_ca.nav.nav_item_stack}
+          </div>
+          <div className="item">
+            {lang === "pt-br"
+              ? book.pt_br.nav.nav_item_contact
+              : book.en_ca.nav.nav_item_contact}
+          </div>
         </div>
-        <div className="item">
-          {lang === "pt-br"
-            ? book.pt_br.nav.nav_item_work
-            : book.en_ca.nav.nav_item_work}
-        </div>
-        <div className="item">
-          {lang === "pt-br"
-            ? book.pt_br.nav.nav_item_about
-            : book.en_ca.nav.nav_item_about}
-        </div>
-        <div className="item">
-          {lang === "pt-br"
-            ? book.pt_br.nav.nav_item_stack
-            : book.en_ca.nav.nav_item_stack}
-        </div>
-        <div className="item">
-          {lang === "pt-br"
-            ? book.pt_br.nav.nav_item_contact
-            : book.en_ca.nav.nav_item_contact}
-        </div>
-      </div>
-      <div className="languages">
-        <div
-          className="item"
-          title="Alterar para o Português"
-          onClick={() => setLang("pt-br")}
-        >
-          <img src={brazil_flag} alt="PT-BR" />
-        </div>
-        <div
-          className="item"
-          title="Switch to English"
-          onClick={() => setLang("en-ca")}
-        >
-          <img src={canada_flag} alt="EN-CA" />
+        <div className="languages">
+          <div
+            className="item"
+            title="Alterar para o Português"
+            onClick={() => setLang("pt-br")}
+          >
+            <img src={brazil_flag} alt="PT-BR" />
+          </div>
+          <div
+            className="item"
+            title="Switch to English"
+            onClick={() => setLang("en-ca")}
+          >
+            <img src={canada_flag} alt="EN-CA" />
+          </div>
         </div>
       </div>
     </nav>

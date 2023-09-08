@@ -2,6 +2,13 @@ nav {
   height: 80px;
   width: 100%;
   background-color: transparent;
+  position: fixed;
+  z-index: 1;
+}
+
+nav .nav-container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,8 +16,8 @@ nav {
   gap: 30px;
 }
 
-nav .links,
-.languages {
+nav .nav-container .links,
+nav .nav-container .languages {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -18,24 +25,24 @@ nav .links,
   -webkit-tap-highlight-color: transparent;
 }
 
-nav .links {
+nav .nav-container .links {
   gap: 10px;
 }
 
-nav .languages .item {
+nav .nav-container .languages .item {
   height: 30px;
   width: 30px;
   margin: 0 3px;
   cursor: pointer;
 }
 
-nav .languages .item img {
+nav .nav-container .languages .item img {
   height: 100%;
   width: 100%;
   border: none;
 }
 
-nav .links .item {
+nav .nav-container .links .item {
   color: #3d3d3d;
   border: 1px solid transparent;
   background-color: transparent;
@@ -45,24 +52,24 @@ nav .links .item {
   padding: 8px 20px;
 }
 
-nav .links .item.active {
+nav .nav-container .links .item.active {
   background-color: #000;
   color: #fff;
   cursor: default !important;
   border: 1px solid #000;
 }
 
-nav .links .item:hover {
+nav .nav-container .links .item:hover {
   border: 1px solid #000;
   cursor: pointer;
 }
 
-nav .links .item a:hover {
+nav .nav-container .links .item a:hover {
   color: #fff;
 }
 
 @media screen and (max-width: 900px) {
-  nav {
+  nav .nav-container {
     flex-direction: column;
     height: auto;
     gap: 15px;
@@ -70,14 +77,14 @@ nav .links .item a:hover {
     padding: 20px 0 30px 0;
   }
 
-  nav .links {
+  nav .nav-container .links {
     flex-direction: column;
     height: 100%;
   }
 }
 
 @media screen and (max-width: 550px) {
-  nav {
+  nav .nav-container {
     justify-content: center;
   }
 }
