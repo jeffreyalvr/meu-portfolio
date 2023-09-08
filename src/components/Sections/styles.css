@@ -38,9 +38,9 @@ section .bio .description .main {
 
 section .bio .description .tag span.title {
   font-size: 26px;
-  color: #3d6798;
+  color: var(--blue);
   font-weight: bold;
-  background: linear-gradient(45deg, #3d6798, #983d3d);
+  background: linear-gradient(45deg, var(--blue), var(--red));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -16,6 +16,7 @@ import Button from "../Button";
 import Works from "../Works";
 import Roadmap from "../Roadmap";
 import MinhaStack from "../MinhaStack";
+import Contact from "../Contact";
 
 const Sections = ({ linkedin_url }) => {
   const { lang } = useContext(LanguageContext);
@@ -92,6 +93,26 @@ const Sections = ({ linkedin_url }) => {
             : book.en_ca.sections.sec_stack_subtitle}
         </SubTitle>
         <MinhaStack />
+      </section>
+
+      <section>
+        <Title>
+          {lang === "pt-br"
+            ? book.pt_br.sections.sec_contact_title
+            : book.en_ca.sections.sec_contact_title}
+        </Title>
+        <SubTitle>
+          {lang === "pt-br"
+            ? book.pt_br.sections.sec_contact_subtitle_1
+            : book.en_ca.sections.sec_contact_subtitle_1}
+        </SubTitle>
+        <br />
+        <SubTitle>
+          {lang === "pt-br"
+            ? book.pt_br.sections.sec_contact_subtitle_2
+            : book.en_ca.sections.sec_contact_subtitle_2}
+        </SubTitle>
+        <Contact />
       </section>
     </>
   );

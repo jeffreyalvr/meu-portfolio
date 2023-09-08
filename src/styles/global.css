@@ -1,6 +1,10 @@
 :root {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
+
+  --red: #983d3d;
+  --blue: #3d6798;
+  --green: #29b052;
 }
 
 ::selection {
@@ -19,4 +23,24 @@
 body {
   background: linear-gradient(130deg, #fff 0%, #e2e2e2 50%, #fff 100%);
   background-attachment: fixed;
+}
+
+input[type="text"],
+textarea {
+  padding: 15px 30px;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #c6c6c6;
+  outline: none;
+  resize: vertical;
+  flex-grow: 2;
+  max-width: 500px;
+  font-size: 16px;
+  font-family: Poppis, sans-serif;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  background-color: #3c3c3c1c;
 }

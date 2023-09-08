@@ -29,13 +29,13 @@
 
 .signal.now,
 .path.now {
-  color: #29b052 !important;
-  border-color: #29b052 !important;
+  color: var(--green) !important;
+  border-color: var(--green) !important;
 }
 
 .roadmap .road-item .signal-date {
   font-size: 16px;
-  color: #983d3d;
+  color: var(--red);
   text-align: center;
   width: 50px;
   font-weight: bold;

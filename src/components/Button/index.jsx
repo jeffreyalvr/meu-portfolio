@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Button = ({ text, icon, url }) => {
   return (
     <Link className="button" to={url} target="_blank" rel="noopener noreferrer">
-      <img src={icon} />
+      {icon ? <img src={icon} /> : undefined}
       {text}
     </Link>
   );

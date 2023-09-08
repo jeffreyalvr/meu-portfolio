@@ -26,8 +26,8 @@
   font-size: 5rem;
   position: unset;
   margin: 0 0 0 23px;
-  color: #3d6798;
-  background: linear-gradient(45deg, #3d6798, #983d3d);
+  color: var(--blue);
+  background: linear-gradient(45deg, var(--blue), var(--red));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

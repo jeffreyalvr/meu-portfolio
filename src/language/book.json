@@ -19,7 +19,10 @@
       "sec_about_span_spoken_languages": "Falante de Português, Inglês e Francês.",
       "sec_about_span_role": "Desenvolvedor WEB.",
       "sec_stack_title": "Stack",
-      "sec_stack_subtitle": "Estas são todas as ferramentas das quais possuo experiência de uso."
+      "sec_stack_subtitle": "Estas são todas as ferramentas das quais possuo experiência de uso.",
+      "sec_contact_title": "Contato",
+      "sec_contact_subtitle_1": "Você pode entrar em contato comigo através do formulário abaixo.",
+      "sec_contact_subtitle_2": "Retornarei a mensagem assim que possível."
     },
     "roadmap": {
       "rm_span_1": "Início da graduação em Ciências da Computação",
@@ -52,7 +55,10 @@
       "sec_about_span_spoken_languages": "Speaks Portuguese, English and French.",
       "sec_about_span_role": "WEB Developer.",
       "sec_stack_title": "Stack",
-      "sec_stack_subtitle": "These are all the tools I'm experienced with."
+      "sec_stack_subtitle": "These are all the tools I'm experienced with.",
+      "sec_contact_title": "Contact",
+      "sec_contact_subtitle_1": "You can reach me by filling the following contact form bellow.",
+      "sec_contact_subtitle_2": "I'll get back to you as soon as possible."
     },
     "roadmap": {
       "rm_span_1": "Began studying Computer Science",
