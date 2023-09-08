@@ -34,6 +34,7 @@
   font-size: 12px;
   color: var(--red);
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1000px) {

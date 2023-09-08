@@ -10,6 +10,10 @@
       "nav_item_contact": "contato",
       "nav_item_stack": "Stack"
     },
+    "hero": {
+      "hero_h1": "Olá, sou o",
+      "hero_footer_span": "Este site ainda está em desenvolvimento."
+    },
     "sections": {
       "sec_works_title": "Trabalhos",
       "sec_works_subtitle": "Abaixo você pode ver todos os projetos que demostram o que eu posso lhe oferecer com o meu conhecimento.",
@@ -30,9 +34,17 @@
       "rm_span_3": "Início da pós-graduação em Desenvolvimento para Aplicações Web",
       "rm_span_4": "Lançamento do site e portfólio"
     },
-    "hero": {
-      "hero_h1": "Olá, sou o",
-      "hero_footer_span": "Este site ainda está em desenvolvimento."
+    "contact": {
+      "cnt_span_1": "Qual o seu nome?",
+      "cnt_span_2": "Qual é o seu e-mail?",
+      "cnt_span_3": "Para qual empresa você trabalha?",
+      "cnt_span_4": "Dê-me um resumo do que você pretende tratar comigo.",
+      "cnt_span_5": "Como você chegou até mim?",
+      "cnt_btn_send": "Enviar",
+      "cnt_lbl_required": "Obrigatório",
+      "cnt_input_txt_fullname": "Digite seu nome completo",
+      "cnt_input_txt_generic": "Digite aqui...",
+      "cnt_input_txt_message": "Mensagem"
     }
   },
   "en_ca": {
@@ -45,6 +57,9 @@
       "nav_item_about": "about",
       "nav_item_contact": "contact",
       "nav_item_stack": "Stack"
+    },
+    "hero": {
+      "hero_h1": "Hi, I'm"
     },
     "sections": {
       "sec_works_title": "Works",
@@ -66,8 +81,17 @@
       "rm_span_3": "Began studying Web Applications Development",
       "rm_span_4": "Released my website and portfolio online"
     },
-    "hero": {
-      "hero_h1": "Hi, I'm"
+    "contact": {
+      "cnt_span_1": "What is your name?",
+      "cnt_span_2": "What is your email?",
+      "cnt_span_3": "What company do you work in?",
+      "cnt_span_4": "Tell me briefly what do you want to talk about.",
+      "cnt_span_5": "How did you get to know about me?",
+      "cnt_btn_send": "Send",
+      "cnt_lbl_required": "Required",
+      "cnt_input_txt_fullname": "Type your full name",
+      "cnt_input_txt_generic": "Type here...",
+      "cnt_input_txt_message": "Message"
     }
   }
 }
