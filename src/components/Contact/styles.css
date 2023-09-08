@@ -13,14 +13,19 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: auto;
 }
 
 .contact-container .contact-item + .align-right {
   justify-content: flex-end;
 }
 
-.contact-container .contact-item + .mt-30 {
+.contact-container .contact-item .action-buttons {
   margin-top: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contact-container .contact-item .item-text {
@@ -47,9 +52,5 @@
   .contact-container .contact-item input[type="text"],
   .contact-container .contact-item textarea {
     max-width: 100%;
-  }
-
-  .contact-container .contact-item + .no-grow {
-    justify-content: center;
   }
 }

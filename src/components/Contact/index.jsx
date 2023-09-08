@@ -129,15 +129,17 @@ const Contact = () => {
           required
         />
       </div>
-      <div className="contact-item no-grow align-right mt-30">
-        <Button
-          text={
-            lang === "pt-br"
-              ? book.pt_br.contact.cnt_btn_send
-              : book.en_ca.contact.cnt_btn_send
-          }
-          url=""
-        />
+      <div className="contact-item align-right">
+        <div className="action-buttons">
+          <Button
+            text={
+              lang === "pt-br"
+                ? book.pt_br.contact.cnt_btn_send
+                : book.en_ca.contact.cnt_btn_send
+            }
+            url=""
+          />
+        </div>
       </div>
     </div>
   );
