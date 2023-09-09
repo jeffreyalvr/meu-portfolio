@@ -18,12 +18,12 @@ import Roadmap from "../Roadmap";
 import MinhaStack from "../MinhaStack";
 import Contact from "../Contact";
 
-const Sections = ({ linkedin_url }) => {
+const Sections = ({ linkedin_url, sections }) => {
   const { lang } = useContext(LanguageContext);
 
   return (
     <>
-      <section>
+      <section id="works" ref={sections.works}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_works_title
@@ -37,7 +37,7 @@ const Sections = ({ linkedin_url }) => {
         <Works />
       </section>
 
-      <section>
+      <section id="about" ref={sections.about}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_about_title
@@ -81,7 +81,7 @@ const Sections = ({ linkedin_url }) => {
         <Roadmap />
       </section>
 
-      <section>
+      <section id="stack" ref={sections.stack}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_stack_title
@@ -95,7 +95,7 @@ const Sections = ({ linkedin_url }) => {
         <MinhaStack />
       </section>
 
-      <section>
+      <section id="contact" ref={sections.contact}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_contact_title

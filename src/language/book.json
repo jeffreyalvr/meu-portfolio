@@ -4,7 +4,6 @@
       "title": "Olá, sou o Jeffrey!"
     },
     "nav": {
-      "nav_item_homepage": "início",
       "nav_item_work": "trabalhos",
       "nav_item_about": "sobre",
       "nav_item_contact": "contato",
@@ -52,7 +51,6 @@
       "title": "Hi, I'm Jeffrey!"
     },
     "nav": {
-      "nav_item_homepage": "home",
       "nav_item_work": "works",
       "nav_item_about": "about",
       "nav_item_contact": "contact",

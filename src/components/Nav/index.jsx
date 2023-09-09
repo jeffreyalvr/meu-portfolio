@@ -8,7 +8,7 @@ import book from "../../language/book.json";
 import brazil_flag from "../../assets/images/brazil_flag.png";
 import canada_flag from "../../assets/images/canada_flag.png";
 
-const Nav = () => {
+const Nav = ({ scrollToSection, sections, activeSection }) => {
   const { lang, setLang } = useContext(LanguageContext);
   const titulo =
     lang === "pt-br" ? book.pt_br.pages.title : book.en_ca.pages.title;
@@ -25,27 +25,34 @@ const Nav = () => {
     <nav>
       <div className="nav-container">
         <div className="links">
-          <div className="item active">
-            {lang === "pt-br"
-              ? book.pt_br.nav.nav_item_homepage
-              : book.en_ca.nav.nav_item_homepage}
-          </div>
-          <div className="item">
+          <div
+            className={`item ${activeSection === 1 ? "active" : undefined}`}
+            onClick={() => scrollToSection(sections.works, 1)}
+          >
             {lang === "pt-br"
               ? book.pt_br.nav.nav_item_work
               : book.en_ca.nav.nav_item_work}
           </div>
-          <div className="item">
+          <div
+            className={`item ${activeSection === 2 ? "active" : undefined}`}
+            onClick={() => scrollToSection(sections.about, 2)}
+          >
             {lang === "pt-br"
               ? book.pt_br.nav.nav_item_about
               : book.en_ca.nav.nav_item_about}
           </div>
-          <div className="item">
+          <div
+            className={`item ${activeSection === 3 ? "active" : undefined}`}
+            onClick={() => scrollToSection(sections.stack, 3)}
+          >
             {lang === "pt-br"
               ? book.pt_br.nav.nav_item_stack
               : book.en_ca.nav.nav_item_stack}
           </div>
-          <div className="item">
+          <div
+            className={`item ${activeSection === 4 ? "active" : undefined}`}
+            onClick={() => scrollToSection(sections.contact, 4)}
+          >
             {lang === "pt-br"
               ? book.pt_br.nav.nav_item_contact
               : book.en_ca.nav.nav_item_contact}
