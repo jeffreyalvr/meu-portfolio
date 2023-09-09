@@ -8,7 +8,7 @@ import "./styles.css";
 import img_linkedin from "../../assets/images/linkedin.png";
 import img_github from "../../assets/images/github.png";
 
-import Button from "../Button";
+import { LinkButton } from "../Button";
 
 const Hero = ({ children, linkedin_url, github_url }) => {
   const { lang } = useContext(LanguageContext);
@@ -28,8 +28,8 @@ const Hero = ({ children, linkedin_url, github_url }) => {
         </div>
 
         <div className="action-buttons">
-          <Button text="LinkedIn" icon={img_linkedin} url={linkedin_url} />
-          <Button text="GitHub" icon={img_github} url={github_url} />
+          <LinkButton text="LinkedIn" icon={img_linkedin} url={linkedin_url} />
+          <LinkButton text="GitHub" icon={img_github} url={github_url} />
         </div>
       </div>
     </div>

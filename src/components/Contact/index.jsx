@@ -6,7 +6,7 @@ import book from "../../language/book.json";
 
 import "./styles.css";
 
-import Button from "../Button";
+import { ActionButton } from "../Button";
 
 const Contact = () => {
   const { lang } = useContext(LanguageContext);
@@ -131,7 +131,7 @@ const Contact = () => {
       </div>
       <div className="contact-item align-right">
         <div className="action-buttons">
-          <Button
+          <ActionButton
             text={
               lang === "pt-br"
                 ? book.pt_br.contact.cnt_btn_send

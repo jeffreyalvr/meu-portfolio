@@ -11,7 +11,7 @@ import { Title, SubTitle } from "../Text";
 import img_linkedin from "../../assets/images/linkedin.png";
 import img_profile from "../../assets/images/profile.jpeg";
 
-import Button from "../Button";
+import { LinkButton } from "../Button";
 
 import Works from "../Works";
 import Roadmap from "../Roadmap";
@@ -74,7 +74,11 @@ const Sections = ({ linkedin_url, sections }) => {
               </div>
             </div>
             <div className="action-buttons">
-              <Button text="LinkedIn" icon={img_linkedin} url={linkedin_url} />
+              <LinkButton
+                text="LinkedIn"
+                icon={img_linkedin}
+                url={linkedin_url}
+              />
             </div>
           </div>
         </div>
