@@ -1,31 +1,31 @@
-.button,
-button {
+.floating-button {
   padding: 15px 30px;
-  color: #000;
-  background-color: #00000000;
+  background-color: #000;
+  color: #fff;
   border-radius: 50px;
   cursor: pointer;
   border: 1px solid #3d3d3d;
   outline: none;
   text-decoration: none;
   transition: ease-in 0.2s;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-weight: bold;
 }
 
-.button:hover,
-button:hover {
-  background-color: #000;
+.floating-button:hover {
+  background-color: #3b3b3b;
   border: 1px solid #000;
   color: #fff;
 }
 
-.button:active,
-button:active {
-  background-color: #000;
+.floating-button:active {
+  background-color: #3b3b3b;
   color: #fff;
 }
 
-.button img,
-button img {
+.floating-button img {
   vertical-align: middle;
   margin: 0 10px 0 0;
 }

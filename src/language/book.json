@@ -1,7 +1,8 @@
 {
   "pt_br": {
     "pages": {
-      "title": "Olá, sou o Jeffrey!"
+      "title": "Olá, sou o Jeffrey!",
+      "floating_button_text": "Subir"
     },
     "nav": {
       "nav_item_work": "trabalhos",
@@ -48,7 +49,8 @@
   },
   "en_ca": {
     "pages": {
-      "title": "Hi, I'm Jeffrey!"
+      "title": "Hi, I'm Jeffrey!",
+      "floating_button_text": "Go up"
     },
     "nav": {
       "nav_item_work": "works",

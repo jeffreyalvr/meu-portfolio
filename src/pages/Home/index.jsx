@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { LanguageContext } from "../../Contexts/LanguageContext";
 
 import Nav from "../../components/Nav";
@@ -6,9 +6,13 @@ import Hero from "../../components/Hero";
 import Sections from "../../components/Sections";
 import Footer from "../../components/Footer";
 import Wrapper from "../../components/Wrapper";
+import FloatingButton from "../../components/FloatingButton";
 
 const Home = () => {
   const [lang, setLang] = useState("pt-br"); /* INFO: pt-br || en-ca */
+
+  const [floatingButtonVisibility, setFloatingButtonVisibility] =
+    useState(false);
 
   const linkedin_url = "https://www.linkedin.com/in/jeffreyalvr/";
   const github_url = "https://github.com/jeffreyalvr";
@@ -20,11 +24,23 @@ const Home = () => {
 
   const [activeSection, setActiveSection] = useState(0);
 
-  const scrollToSection = (elementReference, section) => {
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    let scrollY = window.scrollY;
+    scrollY > 500
+      ? setFloatingButtonVisibility(true)
+      : setFloatingButtonVisibility(false);
+  };
+
+  const scrollToSection = (elementReference, section = 0) => {
     setActiveSection(section);
 
     window.scrollTo({
-      top: elementReference.current.offsetTop,
+      top: elementReference === 0 ? 0 : elementReference.current.offsetTop,
       behavior: "smooth",
     });
   };
@@ -54,6 +70,9 @@ const Home = () => {
           }}
         />
         <Footer />
+        {floatingButtonVisibility && (
+          <FloatingButton scrollToSection={scrollToSection} />
+        )}
       </Wrapper>
     </LanguageContext.Provider>
   );
