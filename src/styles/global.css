@@ -5,6 +5,13 @@
   --red: #983d3d;
   --blue: #3d6798;
   --green: #29b052;
+  --background-gradient: linear-gradient(
+    130deg,
+    #fff 0%,
+    #e2e2e2 50%,
+    #fff 100%
+  );
+  --background-attachment: fixed;
 }
 
 ::selection {
@@ -21,8 +28,8 @@
 }
 
 body {
-  background: linear-gradient(130deg, #fff 0%, #e2e2e2 50%, #fff 100%);
-  background-attachment: fixed;
+  background: var(--background-gradient);
+  background-attachment: var(--background-attachment);
 }
 
 input[type="text"],

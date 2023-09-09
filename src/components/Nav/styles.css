@@ -1,8 +1,9 @@
 nav {
   height: 80px;
   width: 100%;
-  background-color: transparent;
   position: fixed;
+  background: var(--background-gradient);
+  background-attachment: var(--background-attachment);
   z-index: 1;
 }
 
@@ -73,7 +74,8 @@ nav .nav-container .links .item a:hover {
     display: flex;
     flex-direction: column;
     height: auto;
-    position: relative;
+    position: relative !important;
+    background: transparent;
   }
   nav .nav-container {
     flex-direction: column;
