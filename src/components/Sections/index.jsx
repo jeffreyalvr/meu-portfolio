@@ -23,7 +23,7 @@ const Sections = ({ linkedin_url, sections }) => {
 
   return (
     <>
-      <section id="works" ref={sections.works}>
+      <section className="move-up" ref={sections.works}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_works_title
@@ -37,7 +37,7 @@ const Sections = ({ linkedin_url, sections }) => {
         <Works />
       </section>
 
-      <section id="about" ref={sections.about}>
+      <section className="move-up" ref={sections.about}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_about_title
@@ -81,7 +81,7 @@ const Sections = ({ linkedin_url, sections }) => {
         <Roadmap />
       </section>
 
-      <section id="stack" ref={sections.stack}>
+      <section className="move-up" ref={sections.stack}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_stack_title
@@ -95,7 +95,7 @@ const Sections = ({ linkedin_url, sections }) => {
         <MinhaStack />
       </section>
 
-      <section id="contact" ref={sections.contact}>
+      <section className="move-up" ref={sections.contact}>
         <Title>
           {lang === "pt-br"
             ? book.pt_br.sections.sec_contact_title
