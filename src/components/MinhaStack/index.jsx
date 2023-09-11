@@ -12,10 +12,13 @@ import img_nodejs from "../../assets/images/nodejs.png";
 import img_react from "../../assets/images/react.png";
 import img_sass from "../../assets/images/sass.png";
 import img_nextjs from "../../assets/images/nextjs.png";
+import img_bun from "../../assets/images/bun.png";
 import img_tailwind from "../../assets/images/tailwind.png";
 import img_materialui from "../../assets/images/materialui.png";
 import img_redux from "../../assets/images/redux.png";
+import img_astro from "../../assets/images/astro.png";
 import img_graphql from "../../assets/images/graphql.png";
+import img_electron from "../../assets/images/electron.png";
 
 const MinhaStack = () => {
   return (
@@ -52,6 +55,14 @@ const MinhaStack = () => {
         <img src={img_nextjs} title="Next JS" alt="Next JS" />
         <span>Next JS</span>
       </div>
+      <div className="stack-item">
+        <img src={img_bun} title="Bun" alt="Bun" />
+        <span>Bun</span>
+      </div>
+      <div className="stack-item">
+        <img src={img_electron} title="Electron" alt="Electron" />
+        <span>Electron</span>
+      </div>
       <div className="stack-item hidden">
         <img src={img_mongodb} title="MongoDB" alt="MongoDB" />
         <span>MongoDB</span>
@@ -67,6 +78,10 @@ const MinhaStack = () => {
       <div className="stack-item">
         <img src={img_figma} title="Figma" alt="Figma" />
         <span>Figma</span>
+      </div>
+      <div className="stack-item hidden">
+        <img src={img_astro} title="Astro" alt="Astro" />
+        <span>Astro</span>
       </div>
       <div className="stack-item hidden">
         <img src={img_redux} title="Redux" alt="Redux" />
