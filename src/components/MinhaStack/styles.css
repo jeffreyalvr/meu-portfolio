@@ -9,7 +9,7 @@
 
 .stack .stack-item {
   background-color: transparent;
-  height: 80px;
+  height: auto;
   width: 80px;
   display: flex;
   flex-direction: column;
@@ -18,9 +18,8 @@
 }
 
 .stack .stack-item img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
+  width: 80px;
+  height: 80px;
   border: none;
   background-repeat: no-repeat;
   background-position: center;
