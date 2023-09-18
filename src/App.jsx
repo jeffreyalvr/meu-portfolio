@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { LanguageContext } from "./Contexts/LanguageContext";
 
@@ -8,7 +8,16 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
-  const [lang, setLang] = useState("pt-br"); /* INFO: pt-br || en-ca */
+  /* INFO: pt-br || en-ca */
+  const [lang, setLang] = useState(localStorage.getItem("lang") || "pt-br");
+
+  useEffect(() => {
+    handleLocalStorage(lang);
+  }, [lang]);
+
+  const handleLocalStorage = (language) => {
+    localStorage.setItem("lang", language);
+  };
 
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>
