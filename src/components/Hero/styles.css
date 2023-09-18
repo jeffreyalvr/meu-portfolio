@@ -27,7 +27,7 @@
   position: unset;
   margin: 0 0 0 23px;
   color: var(--blue);
-  background: linear-gradient(45deg, var(--blue), var(--red));
+  background: var(--text-gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -123,6 +123,12 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .hero .container {
+    margin: 170px 0 !important;
   }
 }
 

@@ -29,3 +29,8 @@ button img {
   vertical-align: middle;
   margin: 0 10px 0 0;
 }
+
+.invert-img-hover:hover img,
+.invert-img-hover:hover img {
+  filter: invert(100%);
+}

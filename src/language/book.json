@@ -2,7 +2,11 @@
   "pt_br": {
     "pages": {
       "title": "Olá, sou o Jeffrey!",
-      "floating_button_text": "Subir"
+      "floating_button_text": "Subir",
+      "not_found_h1": "Desculpe, estamos perdidos",
+      "not_found_span_1": "A página que você está procurando não existe.",
+      "not_found_span_2": "Talvez você tenha digitado algo errado?",
+      "not_found_button": "Voltar"
     },
     "nav": {
       "nav_item_work": "trabalhos",
@@ -50,7 +54,11 @@
   "en_ca": {
     "pages": {
       "title": "Hi, I'm Jeffrey!",
-      "floating_button_text": "Go up"
+      "floating_button_text": "Go up",
+      "not_found_h1": "Sorry, but we're lost",
+      "not_found_span_1": "The page you're looking for doesn't exist.",
+      "not_found_span_2": "Maybe you typed something wrong?",
+      "not_found_button": "Go back"
     },
     "nav": {
       "nav_item_work": "works",

@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { LanguageContext } from "../../Contexts/LanguageContext";
 
 import Nav from "../../components/Nav";
 import Hero from "../../components/Hero";
@@ -9,8 +8,6 @@ import Wrapper from "../../components/Wrapper";
 import FloatingButton from "../../components/FloatingButton";
 
 const Home = () => {
-  const [lang, setLang] = useState("pt-br"); /* INFO: pt-br || en-ca */
-
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
 
@@ -46,7 +43,7 @@ const Home = () => {
   };
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang }}>
+    <>
       <Hero linkedin_url={linkedin_url} github_url={github_url}>
         <Nav
           scrollToSection={scrollToSection}
@@ -74,7 +71,7 @@ const Home = () => {
           <FloatingButton scrollToSection={scrollToSection} />
         )}
       </Wrapper>
-    </LanguageContext.Provider>
+    </>
   );
 };
 
