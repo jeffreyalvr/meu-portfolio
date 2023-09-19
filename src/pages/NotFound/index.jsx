@@ -50,6 +50,7 @@ const NotFound = () => {
             }
             overrideClass="invert-img-hover"
             icon={go_back_icon}
+            func={handleGoBack}
           />
         </div>
       </div>
