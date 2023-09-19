@@ -138,7 +138,7 @@
     font-size: 4rem;
   }
   .hero .container {
-    margin: 100px 0;
+    margin: 100px 0 !important;
   }
   .hero .container .label-block h2 {
     font-size: 2rem;
@@ -170,14 +170,14 @@
 
 @media screen and (max-height: 700px) {
   .hero .container {
-    margin: 90px 0;
+    margin: 90px 0 !important;
   }
 }
 
 @media screen and (max-width: 650px) {
   .hero .container {
     padding: 0 25px;
-    margin: 60px 0;
+    margin: 60px 0 !important;
   }
   .hero .container h1,
   .hero .container h1 span {
@@ -188,7 +188,7 @@
 @media screen and (max-width: 500px) {
   .hero .container {
     padding: 0 25px;
-    margin: 50px 0;
+    margin: 50px 0 !important;
   }
   .hero .container h1 {
     display: grid;
