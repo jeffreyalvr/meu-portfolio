@@ -11,20 +11,14 @@
 .roadmap .path {
   border-right: 5px dotted #b8b8b8;
   height: 30px;
-  width: 5px;
-  padding: 0 0 0 3px;
+  width: 6px;
+  padding: 0 0 0 6px;
 }
 
 .roadmap .road-item {
   display: flex;
   flex-direction: row;
   gap: 15px;
-}
-
-.roadmap .road-item .signal {
-  font-size: 16px;
-  color: #878787;
-  font-weight: bold;
 }
 
 .signal.now,
@@ -37,10 +31,33 @@
   font-size: 16px;
   color: var(--red);
   text-align: center;
-  width: 50px;
+  width: auto;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.roadmap .road-item .signal-date::before {
+  content: "◯";
+  color: #b8b8b8;
+  padding-right: 10px;
 }
 
 .roadmap .road-item .signal-description {
   font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  .roadmap .road-item {
+    flex-direction: column;
+  }
+  .roadmap .signal-date {
+    text-align: left !important;
+    font-size: 20px !important;
+    margin-top: 10px;
+  }
+  .roadmap .path {
+    display: none;
+  }
 }
