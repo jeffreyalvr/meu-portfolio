@@ -25,6 +25,11 @@
   border-radius: 15px;
 }
 
+.works .work-item:hover button.hidden {
+  display: inline-flex !important;
+  align-items: center;
+}
+
 .works .work-item .item-container {
   height: auto;
   width: 100%;
@@ -61,7 +66,8 @@
   transition: ease-in 0.3s;
 }
 
-.works .work-item img.banner:hover {
+.works .work-item img.banner:hover,
+.works .work-item .item-container:hover + img {
   transition: ease-in 0.3s;
   transform: scale(1.1);
 }
@@ -81,5 +87,13 @@
   }
   .works .work-item .item-container {
     position: unset;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .works .work-item .item-container button.hidden {
+    display: inline-flex !important;
+    align-items: center;
   }
 }

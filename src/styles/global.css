@@ -119,6 +119,10 @@ textarea:focus {
   margin: 20px 0;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 950px) {
   .hero .container h1,
   .hero .container h1 span {

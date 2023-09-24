@@ -33,7 +33,7 @@ const Works = () => {
       <div className="work-item">
         <div className="item-container">
           <ActionButton
-            overrideClass="invert-img-hover my-20"
+            overrideClass="invert-img-hover my-20 hidden"
             text={
               lang === "pt-br"
                 ? book.pt_br.sections.sec_works_project_button
@@ -50,7 +50,7 @@ const Works = () => {
       <div className="work-item">
         <div className="item-container">
           <ActionButton
-            overrideClass="invert-img-hover my-20"
+            overrideClass="invert-img-hover my-20 hidden"
             text={
               lang === "pt-br"
                 ? book.pt_br.sections.sec_works_project_button
@@ -67,7 +67,7 @@ const Works = () => {
       <div className="work-item">
         <div className="item-container">
           <ActionButton
-            overrideClass="invert-img-hover my-20"
+            overrideClass="invert-img-hover my-20 hidden"
             text={
               lang === "pt-br"
                 ? book.pt_br.sections.sec_works_project_button
@@ -84,7 +84,7 @@ const Works = () => {
       <div className="work-item">
         <div className="item-container">
           <ActionButton
-            overrideClass="invert-img-hover my-20"
+            overrideClass="invert-img-hover my-20 hidden"
             text={
               lang === "pt-br"
                 ? book.pt_br.sections.sec_works_project_button
@@ -101,7 +101,7 @@ const Works = () => {
       <div className="work-item">
         <div className="item-container">
           <ActionButton
-            overrideClass="invert-img-hover my-20"
+            overrideClass="invert-img-hover my-20 hidden"
             text={
               lang === "pt-br"
                 ? book.pt_br.sections.sec_works_project_button
