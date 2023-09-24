@@ -7,7 +7,7 @@ import book from "../../language/book.json";
 
 import { ActionButton } from "../../components/Button";
 
-import go_back_icon from "../../assets/images/go_back.png";
+import long_arrow_icon from "../../assets/images/long_arrow.png";
 
 const NotFound = () => {
   const { lang } = useContext(LanguageContext);
@@ -49,7 +49,7 @@ const NotFound = () => {
                 : book.en_ca.pages.not_found_button
             }
             overrideClass="invert-img-hover"
-            icon={go_back_icon}
+            icon={long_arrow_icon}
             func={handleGoBack}
           />
         </div>

@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 import Nav from "../../components/Nav";
 import Hero from "../../components/Hero";
+import Works from "../../components/Works";
 import Sections from "../../components/Sections";
 import Footer from "../../components/Footer";
 import Wrapper from "../../components/Wrapper";

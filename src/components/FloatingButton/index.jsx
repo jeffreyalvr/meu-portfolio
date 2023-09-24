@@ -5,7 +5,7 @@ import { LanguageContext } from "../../Contexts/LanguageContext";
 
 import book from "../../language/book.json";
 
-import go_up_icon from "../../assets/images/go-up.png";
+import go_up_icon from "../../assets/images/go_up.png";
 
 const FloatingButton = ({ scrollToSection }) => {
   const { lang } = useContext(LanguageContext);
