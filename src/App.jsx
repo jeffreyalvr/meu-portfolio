@@ -5,6 +5,7 @@ import { LanguageContext } from "./Contexts/LanguageContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Works from "./pages/Works";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/works" element={<Works />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
