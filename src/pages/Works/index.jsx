@@ -21,11 +21,10 @@ const Works = () => {
 
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
+  const [activeSection, setActiveSection] = useState(0);
 
   const linkedin_url = "https://www.linkedin.com/in/jeffreyalvr/";
   const github_url = "https://github.com/jeffreyalvr";
-
-  const [activeSection, setActiveSection] = useState(0);
 
   const section_works = useRef(null);
 
