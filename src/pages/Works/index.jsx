@@ -80,7 +80,7 @@ const Works = () => {
               en_ca: book.en_ca.nav.nav_item_contact,
             },
             useLink: true,
-            link: "/",
+            link: "/contact",
             sectionId: 3,
           },
         ]}
