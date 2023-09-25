@@ -67,6 +67,44 @@ section .bio .description .action-buttons img {
   width: 24px;
 }
 
+section .separator {
+  margin: 25px 0;
+  background: #c4c4c4;
+  height: 1px;
+  width: 100%;
+}
+
+section .project-summary {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+section .project-summary .left-panel {
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section .project-summary .left-panel .item {
+  height: auto;
+  width: auto;
+}
+
+section .project-summary b {
+  color: var(--red);
+  margin: 0 0 10px 0;
+  display: inline-flex;
+  text-transform: uppercase;
+}
+
+section .project-summary .right-panel {
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 1500px) {
   section {
     max-width: 1200px;
@@ -94,6 +132,17 @@ section .bio .description .action-buttons img {
   }
 }
 
+@media screen and (max-width: 950px) {
+  section .project-summary {
+    flex-direction: column;
+  }
+  section .project-summary .left-panel {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 800px) {
   section .bio {
     margin: 40px 0;
@@ -104,6 +153,13 @@ section .bio .description .action-buttons img {
   }
   section .bio .description .action-buttons {
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section .project-summary .left-panel {
+    display: flex;
+    flex-flow: column;
   }
 }
 

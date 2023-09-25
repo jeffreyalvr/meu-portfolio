@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { useContext } from "react";
 import { LanguageContext } from "../../Contexts/LanguageContext";
 
 import book from "../../language/book.json";
@@ -47,6 +47,13 @@ const Works = () => {
       top: elementReference === 0 ? 0 : elementReference.current.offsetTop,
       behavior: "smooth",
     });
+  };
+
+  let navigate = useNavigate();
+
+  const handleViewProject = () => {
+    let path = "/works/1";
+    navigate(path);
   };
 
   return (
@@ -109,6 +116,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -125,6 +133,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -141,6 +150,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -157,6 +167,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -173,6 +184,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -189,6 +201,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -205,6 +218,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>
@@ -221,6 +235,7 @@ const Works = () => {
                       : book.en_ca.sections.sec_works_project_button
                   }
                   icon={open_icon}
+                  func={handleViewProject}
                 />
                 <h3>Github Repo Browser</h3>
               </div>

@@ -16,12 +16,13 @@ import open_icon from "../../assets/images/open.png";
 const Works = () => {
   const { lang } = useContext(LanguageContext);
 
-  let navigate = useNavigate();
-
+  
   const handleWorksPage = () => {
     let path = "/works";
     navigate(path);
   };
+  
+  let navigate = useNavigate();
 
   const handleViewProject = () => {
     let path = "/works/1";
