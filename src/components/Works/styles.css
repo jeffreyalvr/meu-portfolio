@@ -97,3 +97,14 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .works .work-item .item-container {
+    flex-direction: column;
+  }
+  .works .work-item .item-container button.my-20 {
+    margin: 5px 0;
+  }
+  .works .work-item .item-container h3 {
+    text-align: center;
+}
