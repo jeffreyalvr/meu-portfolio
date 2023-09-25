@@ -1,8 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import Nav from "../../components/Nav";
-import { DefaultHero } from "../../components/Hero";
-import Sections from "../../components/Sections";
+import { CompactHero } from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Wrapper from "../../components/Wrapper";
 import FloatingButton from "../../components/FloatingButton";
@@ -13,11 +12,6 @@ const Home = () => {
 
   const linkedin_url = "https://www.linkedin.com/in/jeffreyalvr/";
   const github_url = "https://github.com/jeffreyalvr";
-
-  const section_works = useRef(null);
-  const section_about = useRef(null);
-  const section_stack = useRef(null);
-  const section_contact = useRef(null);
 
   const [activeSection, setActiveSection] = useState(0);
 
@@ -44,27 +38,9 @@ const Home = () => {
 
   return (
     <>
-      <Nav
-        scrollToSection={scrollToSection}
-        sections={{
-          works: section_works,
-          about: section_about,
-          stack: section_stack,
-          contact: section_contact,
-        }}
-        activeSection={activeSection}
-      />
-      <DefaultHero linkedin_url={linkedin_url} github_url={github_url} />
+      <Nav scrollToSection={scrollToSection} activeSection={activeSection} />
+      <CompactHero linkedin_url={linkedin_url} github_url={github_url} />
       <Wrapper>
-        <Sections
-          linkedin_url={linkedin_url}
-          sections={{
-            works: section_works,
-            about: section_about,
-            stack: section_stack,
-            contact: section_contact,
-          }}
-        />
         <Footer />
         {floatingButtonVisibility && (
           <FloatingButton scrollToSection={scrollToSection} />

@@ -16,6 +16,14 @@
   margin: 200px 0;
 }
 
+.hero-compact {
+  background: var(--works-bg-gradient) !important;
+}
+
+.hero-compact .container {
+  margin: 100px 0 !important;
+}
+
 .hero .container h1 {
   color: #3d3d3d;
   font-size: 5rem;
