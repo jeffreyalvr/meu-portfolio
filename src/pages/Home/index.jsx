@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
+import book from "../../language/book.json";
+
 import Nav from "../../components/Nav";
 import { DefaultHero } from "../../components/Hero";
 import Sections from "../../components/Sections";
@@ -45,14 +47,42 @@ const Home = () => {
   return (
     <>
       <Nav
-        scrollToSection={scrollToSection}
-        sections={{
-          works: section_works,
-          about: section_about,
-          stack: section_stack,
-          contact: section_contact,
-        }}
         activeSection={activeSection}
+        scrollToSection={scrollToSection}
+        linkItems={[
+          {
+            page: {
+              pt_br: book.pt_br.nav.nav_item_work,
+              en_ca: book.en_ca.nav.nav_item_work,
+            },
+            sectionRef: section_works,
+            sectionId: 1,
+          },
+          {
+            page: {
+              pt_br: book.pt_br.nav.nav_item_about,
+              en_ca: book.en_ca.nav.nav_item_about,
+            },
+            sectionRef: section_about,
+            sectionId: 2,
+          },
+          {
+            page: {
+              pt_br: book.pt_br.nav.nav_item_stack,
+              en_ca: book.en_ca.nav.nav_item_stack,
+            },
+            sectionRef: section_stack,
+            sectionId: 3,
+          },
+          {
+            page: {
+              pt_br: book.pt_br.nav.nav_item_contact,
+              en_ca: book.en_ca.nav.nav_item_contact,
+            },
+            sectionRef: section_contact,
+            sectionId: 4,
+          },
+        ]}
       />
       <DefaultHero linkedin_url={linkedin_url} github_url={github_url} />
       <Wrapper>

@@ -1,6 +1,8 @@
 import { useContext, useEffect } from "react";
 import { LanguageContext } from "../../Contexts/LanguageContext";
 
+import { useNavigate } from "react-router-dom";
+
 import "./styles.css";
 
 import book from "../../language/book.json";
@@ -8,8 +10,9 @@ import book from "../../language/book.json";
 import brazil_flag from "../../assets/images/brazil_flag.png";
 import canada_flag from "../../assets/images/canada_flag.png";
 
-const Nav = ({ scrollToSection, sections, activeSection }) => {
+const Nav = ({ activeSection, linkItems, scrollToSection }) => {
   const { lang, setLang } = useContext(LanguageContext);
+
   const titulo =
     lang === "pt-br" ? book.pt_br.pages.title : book.en_ca.pages.title;
 
@@ -21,43 +24,33 @@ const Nav = ({ scrollToSection, sections, activeSection }) => {
     document.title = titulo;
   };
 
+  let navigate = useNavigate();
+
+  const handlePageChange = (path) => {
+    navigate(path);
+  };
+
   return (
     <nav>
       <div className="nav-container">
         <div className="links">
-          <div
-            className={`item ${activeSection === 1 ? "active" : undefined}`}
-            onClick={() => scrollToSection(sections.works, 1)}
-          >
-            {lang === "pt-br"
-              ? book.pt_br.nav.nav_item_work
-              : book.en_ca.nav.nav_item_work}
-          </div>
-          <div
-            className={`item ${activeSection === 2 ? "active" : undefined}`}
-            onClick={() => scrollToSection(sections.about, 2)}
-          >
-            {lang === "pt-br"
-              ? book.pt_br.nav.nav_item_about
-              : book.en_ca.nav.nav_item_about}
-          </div>
-          <div
-            className={`item ${activeSection === 3 ? "active" : undefined}`}
-            onClick={() => scrollToSection(sections.stack, 3)}
-          >
-            {lang === "pt-br"
-              ? book.pt_br.nav.nav_item_stack
-              : book.en_ca.nav.nav_item_stack}
-          </div>
-          <div
-            className={`item ${activeSection === 4 ? "active" : undefined}`}
-            onClick={() => scrollToSection(sections.contact, 4)}
-          >
-            {lang === "pt-br"
-              ? book.pt_br.nav.nav_item_contact
-              : book.en_ca.nav.nav_item_contact}
-          </div>
+          {linkItems.map((item) => (
+            <div
+              className={`item ${
+                activeSection === item.sectionId ? "active" : undefined
+              }`}
+              onClick={
+                item.useLink === true
+                  ? () => handlePageChange(item.link)
+                  : () => scrollToSection(item.sectionRef, item.sectionId)
+              }
+              key={item.sectionId}
+            >
+              {lang === "pt-br" ? item.page.pt_br : item.page.en_ca}
+            </div>
+          ))}
         </div>
+
         <div className="languages">
           <div
             className="item"

@@ -9,6 +9,7 @@
       "not_found_button": "Voltar"
     },
     "nav": {
+      "nav_item_home": "início",
       "nav_item_work": "trabalhos",
       "nav_item_about": "sobre",
       "nav_item_contact": "contato",
@@ -63,6 +64,7 @@
       "not_found_button": "Go back"
     },
     "nav": {
+      "nav_item_home": "home",
       "nav_item_work": "works",
       "nav_item_about": "about",
       "nav_item_contact": "contact",
