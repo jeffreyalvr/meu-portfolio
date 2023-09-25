@@ -9,6 +9,7 @@ import Nav from "../../components/Nav";
 import { CompactHero } from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Wrapper from "../../components/Wrapper";
+import ContactComponent from "../../components/Contact";
 import FloatingButton from "../../components/FloatingButton";
 import { Title, SubTitle } from "../../components/Text";
 
@@ -100,6 +101,7 @@ const Contact = () => {
               ? book.pt_br.sections.sec_contact_subtitle_2
               : book.en_ca.sections.sec_contact_subtitle_2}
           </SubTitle>
+          <ContactComponent />
         </section>
         <Footer />
         {floatingButtonVisibility && (
