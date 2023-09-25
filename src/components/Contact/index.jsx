@@ -6,6 +6,8 @@ import book from "../../language/book.json";
 
 import "./styles.css";
 
+import send_icon from "../../assets/images/send.png";
+
 import { ActionButton } from "../Button";
 
 const Contact = () => {
@@ -132,11 +134,13 @@ const Contact = () => {
       <div className="contact-item align-right">
         <div className="action-buttons">
           <ActionButton
+            overrideClass="invert-img-hover"
             text={
               lang === "pt-br"
                 ? book.pt_br.contact.cnt_btn_send
                 : book.en_ca.contact.cnt_btn_send
             }
+            icon={send_icon}
             url=""
           />
         </div>
