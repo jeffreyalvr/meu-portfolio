@@ -7,10 +7,16 @@ import { CompactHero } from "../../components/Hero";
 import Footer from "../../components/Footer";
 import Wrapper from "../../components/Wrapper";
 import FloatingButton from "../../components/FloatingButton";
-import { LinkButton } from "../../components/Button";
+import { LinkButton, ActionButton } from "../../components/Button";
 import { Title, SubTitle } from "../../components/Text";
 
 import open_icon from "../../assets/images/open.png";
+import zoom_icon from "../../assets/images/zoom.png";
+import proj1_img from "../../assets/images/projects/proj1.webp";
+import proj2_img from "../../assets/images/projects/proj2.webp";
+import proj3_img from "../../assets/images/projects/proj3.webp";
+import proj4_img from "../../assets/images/projects/proj4.webp";
+import proj5_img from "../../assets/images/projects/proj5.webp";
 
 const WorkView = () => {
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
@@ -114,6 +120,53 @@ const WorkView = () => {
                 icon={open_icon}
                 url={project_url}
               />
+            </div>
+          </div>
+          <div className="project-gallery">
+            <div className="item">
+              <img src={proj1_img} />
+              <div className="item-container">
+                <ActionButton
+                  overrideClass="invert-img-hover alt-filled no-img-margin hidden"
+                  icon={zoom_icon}
+                />
+              </div>
+            </div>
+            <div className="item">
+              <img src={proj2_img} />
+              <div className="item-container">
+                <ActionButton
+                  overrideClass="invert-img-hover alt-filled no-img-margin hidden"
+                  icon={zoom_icon}
+                />
+              </div>
+            </div>
+            <div className="item">
+              <img src={proj3_img} />
+              <div className="item-container">
+                <ActionButton
+                  overrideClass="invert-img-hover alt-filled no-img-margin hidden"
+                  icon={zoom_icon}
+                />
+              </div>
+            </div>
+            <div className="item">
+              <img src={proj4_img} />
+              <div className="item-container">
+                <ActionButton
+                  overrideClass="invert-img-hover alt-filled no-img-margin hidden"
+                  icon={zoom_icon}
+                />
+              </div>
+            </div>
+            <div className="item">
+              <img src={proj5_img} />
+              <div className="item-container">
+                <ActionButton
+                  overrideClass="invert-img-hover alt-filled no-img-margin hidden"
+                  icon={zoom_icon}
+                />
+              </div>
             </div>
           </div>
         </section>

@@ -17,11 +17,21 @@ button {
   transition: ease-in 0.2s;
 }
 
+.button.alt-filled,
+button.alt-filled {
+  background-color: #fff;
+}
+
 .button.invert,
 button.invert {
   color: #000;
   background-color: #fff;
   border: 1px solid #fff;
+}
+
+.button.no-img-margin img,
+button.no-img-margin img {
+  margin: 0 !important;
 }
 
 .button:hover,
