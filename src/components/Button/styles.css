@@ -1,3 +1,9 @@
+.button-container {
+  height: auto;
+  width: max-content;
+  display: inline-flex;
+}
+
 .button,
 button {
   padding: 15px 30px;

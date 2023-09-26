@@ -207,5 +207,6 @@
   }
   .hero .container .action-buttons {
     flex-direction: column;
+    align-items: center;
   }
 }
