@@ -5,24 +5,11 @@ import { useNavigate } from "react-router-dom";
 
 import "./styles.css";
 
-import book from "../../language/book.json";
-
 import brazil_flag from "../../assets/images/brazil_flag.png";
 import canada_flag from "../../assets/images/canada_flag.png";
 
 const Nav = ({ activeSection, linkItems, scrollToSection }) => {
   const { lang, setLang } = useContext(LanguageContext);
-
-  const titulo =
-    lang === "pt-br" ? book.pt_br.pages.title : book.en_ca.pages.title;
-
-  useEffect(() => {
-    handlePageTitle();
-  }, [lang]);
-
-  const handlePageTitle = () => {
-    document.title = titulo;
-  };
 
   let navigate = useNavigate();
 

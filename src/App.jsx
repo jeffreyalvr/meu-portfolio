@@ -4,6 +4,8 @@ import { LanguageContext } from "./Contexts/LanguageContext";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import book from "./language/book.json";
+
 import Home from "./pages/Home";
 import Works from "./pages/Works";
 import WorkItem from "./pages/WorkItem";
@@ -20,6 +22,17 @@ const App = () => {
 
   const handleLocalStorage = (language) => {
     localStorage.setItem("lang", language);
+  };
+
+  const titulo =
+    lang === "pt-br" ? book.pt_br.pages.title : book.en_ca.pages.title;
+
+  useEffect(() => {
+    handlePageTitle();
+  }, [lang]);
+
+  const handlePageTitle = () => {
+    document.title = titulo;
   };
 
   return (
