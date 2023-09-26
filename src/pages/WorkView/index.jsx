@@ -12,7 +12,7 @@ import { Title, SubTitle } from "../../components/Text";
 
 import open_icon from "../../assets/images/open.png";
 
-const WorkItem = () => {
+const WorkView = () => {
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
   const [activeSection, setActiveSection] = useState(0);
@@ -126,4 +126,4 @@ const WorkItem = () => {
   );
 };
 
-export default WorkItem;
+export default WorkView;
