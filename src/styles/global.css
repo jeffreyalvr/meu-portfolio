@@ -146,6 +146,20 @@ textarea:focus {
   display: none;
 }
 
+img.invert-img,
+.invert-img-hover:hover img,
+.invert-img-hover:hover img {
+  filter: invert(100%);
+}
+
+img.invert-img-face-up {
+  transform: scaleY(-1);
+}
+
+img.invert-img-face-down {
+  transform: scaleY(1);
+}
+
 @media screen and (max-width: 950px) {
   .hero .container h1,
   .hero .container h1 span {

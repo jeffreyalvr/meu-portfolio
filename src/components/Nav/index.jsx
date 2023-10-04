@@ -10,6 +10,8 @@ import "./styles.css";
 
 import brazil_flag from "../../assets/images/brazil_flag.png";
 import canada_flag from "../../assets/images/canada_flag.png";
+import down_arrow_icon from "../../assets/images/arrow.png";
+import language_icon from "../../assets/images/language.png";
 import sun_icon from "../../assets/images/sun.png";
 import moon_icon from "../../assets/images/moon.png";
 
@@ -44,7 +46,7 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
           ))}
         </div>
 
-        <div className="languages">
+        {/* <div className="languages">
           <div
             className="item"
             title="Alterar para o Português"
@@ -58,6 +60,18 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
             onClick={() => setLang("en-ca")}
           >
             <img src={canada_flag} alt="EN-CA" />
+          </div>
+        </div> */}
+
+        <div className="language-container">
+          <div className="item" title="Switch language">
+            <img src={language_icon} alt="A" />
+            <span>Português</span>
+            <img
+              className="invert-img invert-img-180-deg"
+              src={down_arrow_icon}
+              alt="A"
+            />
           </div>
         </div>
 

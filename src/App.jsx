@@ -42,6 +42,7 @@ const App = () => {
     document.title = titulo;
   };
 
+  // TODO: implementar alteração do tema no site
   const handleThemeToggle = () => {
     return true;
   };

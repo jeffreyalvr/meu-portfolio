@@ -70,6 +70,26 @@ nav .nav-container .links .item a:hover {
   color: #fff;
 }
 
+nav .nav-container .language-container {
+  border-radius: 50px;
+  background-color: #c8c8c8;
+  padding: 0 15px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .nav-container .language-container .item {
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
 nav .nav-container .theme-container {
   border-radius: 50px;
   background-color: #c8c8c8;
@@ -88,6 +108,7 @@ nav .nav-container .theme-container .item {
   cursor: pointer;
 }
 
+nav .nav-container .language-container .item img,
 nav .nav-container .theme-container .item img {
   height: 24px;
   width: 24px;
