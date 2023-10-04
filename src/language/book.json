@@ -13,7 +13,11 @@
       "nav_item_work": "trabalhos",
       "nav_item_about": "sobre",
       "nav_item_contact": "contato",
-      "nav_item_stack": "Stack"
+      "nav_item_stack": "Stack",
+      "nav_theme_item_light": "Claro",
+      "nav_theme_item_dark": "Escuro",
+      "nav_theme_item_light_title": "Ativar tema claro",
+      "nav_theme_item_dark_title": "Ativar tema escuro"
     },
     "hero": {
       "hero_h1": "Olá, sou o",
@@ -68,7 +72,11 @@
       "nav_item_work": "works",
       "nav_item_about": "about",
       "nav_item_contact": "contact",
-      "nav_item_stack": "Stack"
+      "nav_item_stack": "Stack",
+      "nav_theme_item_light": "Light",
+      "nav_theme_item_dark": "Dark",
+      "nav_theme_item_light_title": "Toggle the light theme",
+      "nav_theme_item_dark_title": "Toggle the dark theme"
     },
     "hero": {
       "hero_h1": "Hi, I'm"

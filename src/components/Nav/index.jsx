@@ -1,12 +1,16 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../../Contexts/LanguageContext";
 
 import { useNavigate } from "react-router-dom";
+
+import book from "../../language/book.json";
 
 import "./styles.css";
 
 import brazil_flag from "../../assets/images/brazil_flag.png";
 import canada_flag from "../../assets/images/canada_flag.png";
+import sun_icon from "../../assets/images/sun.png";
+import moon_icon from "../../assets/images/moon.png";
 
 const Nav = ({ activeSection, linkItems, scrollToSection }) => {
   const { lang, setLang } = useContext(LanguageContext);
@@ -52,6 +56,43 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
             onClick={() => setLang("en-ca")}
           >
             <img src={canada_flag} alt="EN-CA" />
+          </div>
+        </div>
+
+        <div className="theme-container">
+          <div
+            className="item theme-active"
+            title={
+              lang === "pt-br"
+                ? book.pt_br.nav.nav_theme_item_light_title
+                : book.en_ca.nav.nav_theme_item_light_title
+            }
+          >
+            <img
+              src={sun_icon}
+              alt={
+                lang === "pt-br"
+                  ? book.pt_br.nav.nav_theme_item_light
+                  : book.en_ca.nav.nav_theme_item_light
+              }
+            />
+          </div>
+          <div
+            className="item"
+            title={
+              lang === "pt-br"
+                ? book.pt_br.nav.nav_theme_item_dark_title
+                : book.en_ca.nav.nav_theme_item_dark_title
+            }
+          >
+            <img
+              src={moon_icon}
+              alt={
+                lang === "pt-br"
+                  ? book.pt_br.nav.nav_theme_item_dark
+                  : book.en_ca.nav.nav_theme_item_dark
+              }
+            />
           </div>
         </div>
       </div>

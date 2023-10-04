@@ -18,7 +18,8 @@ nav .nav-container {
 }
 
 nav .nav-container .links,
-nav .nav-container .languages {
+nav .nav-container .languages,
+nav .nav-container .theme-container {
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -67,6 +68,38 @@ nav .nav-container .links .item:hover {
 
 nav .nav-container .links .item a:hover {
   color: #fff;
+}
+
+nav .nav-container .theme-container {
+  border-radius: 50px;
+  background-color: #c8c8c8;
+  padding: 0 5px;
+  gap: 5px;
+}
+
+nav .nav-container .theme-container .item {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+nav .nav-container .theme-container .item img {
+  height: 24px;
+  width: 24px;
+}
+
+nav .nav-container .theme-container .item.theme-active {
+  background-color: #878787;
+  border-radius: 50%;
+}
+
+nav .nav-container .theme-container .item.theme-active img {
+  filter: invert(100%);
 }
 
 @media screen and (max-width: 900px) {
