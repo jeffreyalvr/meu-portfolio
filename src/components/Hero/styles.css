@@ -5,6 +5,7 @@
   flex-direction: column;
   border-bottom: 1px solid #c4c4c4;
   margin-bottom: 50px;
+  background: var(--hero-bg-gradient);
 }
 
 .hero .container {
@@ -17,7 +18,7 @@
 }
 
 .hero-compact {
-  background: var(--works-bg-gradient) !important;
+  background: var(--hero-bg-gradient) !important;
 }
 
 .hero-compact .container {

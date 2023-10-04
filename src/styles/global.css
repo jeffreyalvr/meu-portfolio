@@ -5,14 +5,25 @@
   --red: #983d3d;
   --blue: #3d6798;
   --green: #29b052;
+  --text-gradient: linear-gradient(45deg, var(--blue), var(--red));
+  --background-attachment: fixed;
+
+  /* light theme */
+
+  --background-color: #eaeaea;
+  --border-color: #c4c4c4;
   --background-gradient: linear-gradient(
     130deg,
     #fff 0%,
     #e2e2e2 50%,
     #fff 100%
   );
-  --background-attachment: fixed;
-  --text-gradient: linear-gradient(45deg, var(--blue), var(--red));
+  --hero-bg-gradient: linear-gradient(
+    180deg,
+    #dcdcdc 0%,
+    #e8e8e8 40%,
+    #e6e6e6 50%
+  );
   --works-bg-gradient: linear-gradient(
     130deg,
     #c6c6c6 0%,
@@ -20,13 +31,23 @@
     #d8d8d8 80%
   );
 
+  /* dark theme */
+
+  --background-color-dark: #212226;
+  --border-color-dark: #323232;
   --background-gradient-dark: linear-gradient(
     130deg,
     #1d1d1d 0%,
     #212226 50%,
     #1d1d1d 100%
   );
-  --border-bg-dark: #323232;
+  /* TODO: adicionar hero-bg-gradient nos tons do tema dark */
+  --hero-bg-gradient: linear-gradient(
+    180deg,
+    #dcdcdc 0%,
+    #e8e8e8 40%,
+    #e6e6e6 50%
+  );
   --works-bg-gradient-dark: linear-gradient(
     130deg,
     #202020 0%,
@@ -49,6 +70,7 @@
 }
 
 body {
+  background-color: var(--background-color);
   background: var(--background-gradient);
   background-attachment: var(--background-attachment);
 }
@@ -145,6 +167,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    background: var(--background-color) !important;
+  }
   .not-found-container .description h1 {
     font-size: 2.75rem;
   }
