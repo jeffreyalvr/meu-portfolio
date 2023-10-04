@@ -8,8 +8,6 @@ import book from "../../language/book.json";
 
 import "./styles.css";
 
-import brazil_flag from "../../assets/images/brazil_flag.png";
-import canada_flag from "../../assets/images/canada_flag.png";
 import down_arrow_icon from "../../assets/images/arrow.png";
 import language_icon from "../../assets/images/language.png";
 import sun_icon from "../../assets/images/sun.png";
@@ -46,25 +44,12 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
           ))}
         </div>
 
-        {/* <div className="languages">
+        <div className="language-container">
           <div
             className="item"
-            title="Alterar para o Português"
+            title="Switch language"
             onClick={() => setLang("pt-br")}
           >
-            <img src={brazil_flag} alt="PT-BR" />
-          </div>
-          <div
-            className="item"
-            title="Switch to English"
-            onClick={() => setLang("en-ca")}
-          >
-            <img src={canada_flag} alt="EN-CA" />
-          </div>
-        </div> */}
-
-        <div className="language-container">
-          <div className="item" title="Switch language">
             <img src={language_icon} alt="A" />
             <span>Português</span>
             <img
@@ -72,6 +57,15 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
               src={down_arrow_icon}
               alt="A"
             />
+          </div>
+          <div className="all-languages-container">
+            <div
+              className="item"
+              title="Switch language"
+              onClick={() => setLang("en-ca")}
+            >
+              <span>English</span>
+            </div>
           </div>
         </div>
 

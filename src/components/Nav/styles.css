@@ -90,6 +90,19 @@ nav .nav-container .language-container .item {
   gap: 5px;
 }
 
+nav .nav-container .all-languages-container {
+  border-radius: 50px;
+  background-color: #c8c8c8;
+  padding: 0 15px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
 nav .nav-container .theme-container {
   border-radius: 50px;
   background-color: #c8c8c8;
