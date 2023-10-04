@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #c4c4c4;
+  padding-top: var(--navbar-height);
   margin-bottom: 50px;
   background: var(--hero-bg-gradient);
 }
@@ -14,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 280px 0 200px 0;
+  margin: 200px 0;
 }
 
 .hero-compact {
@@ -22,7 +23,7 @@
 }
 
 .hero-compact .container {
-  margin: 160px 0 80px 0 !important;
+  margin: 80px 0 !important;
 }
 
 .hero .container h1 {
@@ -159,6 +160,12 @@
   }
   .hero .container .action-buttons {
     margin: 60px 0 0 0 !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    padding-top: 0;
   }
 }
 

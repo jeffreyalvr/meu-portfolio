@@ -7,6 +7,7 @@
   --green: #29b052;
   --text-gradient: linear-gradient(45deg, var(--blue), var(--red));
   --background-attachment: fixed;
+  --navbar-height: 80px;
 
   /* light theme */
 

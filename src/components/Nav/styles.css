@@ -1,5 +1,5 @@
 nav {
-  height: 80px;
+  height: var(--navbar-height);
   width: 100%;
   position: fixed;
   background: var(--background-gradient);
