@@ -73,6 +73,7 @@
 @media screen and (max-width: 950px) {
   .works {
     gap: 20px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }
