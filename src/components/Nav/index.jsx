@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { LanguageContext } from "../../Contexts/LanguageContext";
+import { ThemeContext } from "../../Contexts/ThemeContext";
 
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +15,7 @@ import moon_icon from "../../assets/images/moon.png";
 
 const Nav = ({ activeSection, linkItems, scrollToSection }) => {
   const { lang, setLang } = useContext(LanguageContext);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   let navigate = useNavigate();
 
@@ -61,12 +63,13 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
 
         <div className="theme-container">
           <div
-            className="item theme-active"
+            className={`item ${theme === "light" ? "theme-active" : ""}`}
             title={
               lang === "pt-br"
                 ? book.pt_br.nav.nav_theme_item_light_title
                 : book.en_ca.nav.nav_theme_item_light_title
             }
+            onClick={() => setTheme("light")}
           >
             <img
               src={sun_icon}
@@ -78,12 +81,13 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
             />
           </div>
           <div
-            className="item"
+            className={`item ${theme === "dark" ? "theme-active" : ""}`}
             title={
               lang === "pt-br"
                 ? book.pt_br.nav.nav_theme_item_dark_title
                 : book.en_ca.nav.nav_theme_item_dark_title
             }
+            onClick={() => setTheme("dark")}
           >
             <img
               src={moon_icon}

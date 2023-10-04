@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { LanguageContext } from "./Contexts/LanguageContext";
+import { ThemeContext } from "./Contexts/ThemeContext";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,15 +14,17 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
-  /* INFO: pt-br || en-ca */
+  /* INFO: lang: ["pt-br", "en-ca"], theme: ["light", "dark"] */
   const [lang, setLang] = useState(localStorage.getItem("lang") || "pt-br");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
-    handleLocalStorage(lang);
-  }, [lang]);
+    handleLocalStorage({ lang, theme });
+  }, [lang, theme]);
 
-  const handleLocalStorage = (language) => {
-    localStorage.setItem("lang", language);
+  const handleLocalStorage = (params) => {
+    localStorage.setItem("lang", params.lang);
+    localStorage.setItem("theme", params.theme);
   };
 
   const titulo =
@@ -31,23 +34,33 @@ const App = () => {
     handlePageTitle();
   }, [lang]);
 
+  useEffect(() => {
+    handleThemeToggle();
+  }, [theme]);
+
   const handlePageTitle = () => {
     document.title = titulo;
   };
 
+  const handleThemeToggle = () => {
+    return true;
+  };
+
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>
-      <div className="App">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/works" element={<Works />} />
-            <Route path="/works/:id" element={<WorkView />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <div className="App">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/works" element={<Works />} />
+              <Route path="/works/:id" element={<WorkView />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      </ThemeContext.Provider>
     </LanguageContext.Provider>
   );
 };
