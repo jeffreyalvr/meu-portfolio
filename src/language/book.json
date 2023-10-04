@@ -21,7 +21,7 @@
     },
     "sections": {
       "sec_works_title": "Trabalhos",
-      "sec_works_subtitle": "Abaixo você pode ver todos os projetos que demostram o que eu posso lhe oferecer com o meu conhecimento.",
+      "sec_works_subtitle": "Abaixo você pode ver alguns dos projetos que demostram o que eu posso lhe oferecer com o meu conhecimento.",
       "sec_works_all_projects_button": "Ver todos os projetos",
       "sec_works_project_button": "Ver",
       "sec_about_title": "Sobre",
@@ -30,7 +30,7 @@
       "sec_about_span_spoken_languages": "Falante de Português, Inglês e Francês.",
       "sec_about_span_role": "Desenvolvedor WEB.",
       "sec_stack_title": "Stack",
-      "sec_stack_subtitle": "Estas são todas as ferramentas das quais possuo experiência de uso.",
+      "sec_stack_subtitle": "Estas são algumas das ferramentas das quais possuo experiência de uso.",
       "sec_contact_title": "Contato",
       "sec_contact_subtitle_1": "Você pode entrar em contato comigo através do formulário abaixo.",
       "sec_contact_subtitle_2": "Retornarei a mensagem assim que possível."
@@ -84,7 +84,7 @@
       "sec_about_span_spoken_languages": "Speaks Portuguese, English and French.",
       "sec_about_span_role": "WEB Developer.",
       "sec_stack_title": "Stack",
-      "sec_stack_subtitle": "These are all the tools I'm experienced with.",
+      "sec_stack_subtitle": "These are some of the tools I'm experienced with.",
       "sec_contact_title": "Contact",
       "sec_contact_subtitle_1": "You can reach me by filling the following contact form bellow.",
       "sec_contact_subtitle_2": "I'll get back to you as soon as possible."
