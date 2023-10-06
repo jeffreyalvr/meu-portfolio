@@ -79,6 +79,12 @@ nav .nav-container .language-container {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+nav .nav-container .language-container:hover,
+nav .nav-container .theme-container:hover {
+  filter: brightness(105%);
 }
 
 nav .nav-container .language-container .item {
@@ -87,6 +93,7 @@ nav .nav-container .language-container .item {
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  position: relative;
   gap: 5px;
 }
 
