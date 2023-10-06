@@ -1,4 +1,8 @@
 {
+  "languages_pt_br": "Português",
+  "languages_pt_br_title": "Alterar idioma",
+  "languages_en_ca": "English",
+  "languages_en_ca_title": "Switch language",
   "pt_br": {
     "pages": {
       "title": "Olá, sou o Jeffrey!",

@@ -47,24 +47,24 @@ const Nav = ({ activeSection, linkItems, scrollToSection }) => {
         <div className="language-container">
           <div
             className="item"
-            title="Switch language"
+            title={book.languages_pt_br_title}
             onClick={() => setLang("pt-br")}
           >
             <img src={language_icon} alt="A" />
-            <span>Português</span>
+            <span>{book.languages_pt_br}</span>
             <img
-              className="invert-img invert-img-180-deg"
+              className="arrow invert-img invert-img-180-deg"
               src={down_arrow_icon}
               alt="A"
             />
           </div>
-          <div className="all-languages-container">
+          <div className="other-languages">
             <div
               className="item"
-              title="Switch language"
+              title={book.languages_en_ca_title}
               onClick={() => setLang("en-ca")}
             >
-              <span>English</span>
+              <span>{book.languages_en_ca}</span>
             </div>
           </div>
         </div>
