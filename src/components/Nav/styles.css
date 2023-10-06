@@ -5,6 +5,7 @@ nav {
   background: var(--background-gradient);
   background-attachment: var(--background-attachment);
   z-index: 10;
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav .nav-container {
@@ -66,6 +67,7 @@ nav .nav-container .language-container {
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
 
 nav .nav-container .language-container .item img.arrow {
@@ -163,7 +165,6 @@ nav .nav-container .theme-container .item.theme-active img {
     flex-direction: column;
     height: auto;
     gap: 15px;
-    border-bottom: 1px solid #ccc;
     padding: 20px 0 30px 0;
   }
 
