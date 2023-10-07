@@ -45,7 +45,7 @@ const MinhaStack = () => {
       </div>
       <div className="stack-item">
         <img src={img_react} title="React JS" alt="React JS" />
-        <span>React JS</span>
+        <span>React JS & Native</span>
       </div>
       <div className="stack-item">
         <img src={img_nodejs} title="Node JS" alt="Node JS" />
