@@ -31,9 +31,9 @@
     #c6c6c6 20%,
     #d8d8d8 80%
   );
+}
 
-  /* dark theme */
-
+[data-theme="dark"] {
   --background-color-dark: #212226;
   --border-color-dark: #323232;
   --background-gradient-dark: linear-gradient(
