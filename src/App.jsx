@@ -9,7 +9,7 @@ import book from "@language/book.json";
 
 const App = () => {
   const theme = useThemeStore((state) => state.theme);
-  const language = useThemeStore((state) => state.language);
+  const language = useLanguageStore((state) => state.language);
 
   useEffect(() => {
     const html = document.documentElement;
