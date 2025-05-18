@@ -1,9 +1,9 @@
 {
-  "languages_pt_br": "Português",
-  "languages_pt_br_title": "Alterar idioma",
-  "languages_en_ca": "English",
-  "languages_en_ca_title": "Switch language",
-  "pt_br": {
+  "languages_pt": "Português",
+  "languages_pt_title": "Alterar idioma",
+  "languages_en": "English",
+  "languages_en_title": "Switch language",
+  "pt": {
     "pages": {
       "title": "Olá, sou o Jeffrey!",
       "floating_button_text": "Subir",
@@ -62,7 +62,7 @@
       "cnt_input_txt_message": "Mensagem"
     }
   },
-  "en_ca": {
+  "en": {
     "pages": {
       "title": "Hi, I'm Jeffrey!",
       "floating_button_text": "Go up",
