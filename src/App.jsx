@@ -1,68 +1,55 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
-import { LanguageContext } from "./Contexts/LanguageContext";
-import { ThemeContext } from "./Contexts/ThemeContext";
+import Routes from "./routes";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import useThemeStore from "@store/useThemeStore";
+import useLanguageStore from "./store/useLanguageStore";
 
-import book from "./language/book.json";
-
-import Home from "./pages/Home";
-import Works from "./pages/Works";
-import WorkView from "./pages/WorkView";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import book from "@language/book.json";
 
 const App = () => {
-  /* INFO: lang: ["pt-br", "en-ca"], theme: ["light", "dark"] */
-  const [lang, setLang] = useState(localStorage.getItem("lang") || "pt-br");
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const theme = useThemeStore((state) => state.theme);
+  const language = useThemeStore((state) => state.language);
 
   useEffect(() => {
-    handleLocalStorage({ lang, theme });
-  }, [lang, theme]);
+    const html = document.documentElement;
 
-  const handleLocalStorage = (params) => {
-    localStorage.setItem("lang", params.lang);
-    localStorage.setItem("theme", params.theme);
-  };
+    const applyTheme = () => {
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
+      const activeTheme = theme === "system" ? systemTheme : theme;
 
-  const titulo =
-    lang === "pt-br" ? book.pt_br.pages.title : book.en_ca.pages.title;
+      html.setAttribute("data-theme", activeTheme);
+    };
+
+    applyTheme();
+
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleChange = () => {
+      if (theme === "system") applyTheme;
+    };
+
+    media.addEventListener("change", handleChange);
+    return () => media.removeEventListener("change", handleChange);
+  }, [theme]);
+
+  const titulo = language === "pt" ? book.pt.pages.title : book.en.pages.title;
 
   useEffect(() => {
     handlePageTitle();
-  }, [lang]);
-
-  useEffect(() => {
-    handleThemeToggle();
-  }, [theme]);
+  }, [language]);
 
   const handlePageTitle = () => {
     document.title = titulo;
   };
 
-  // TODO: implementar alteração do tema no site
-  const handleThemeToggle = () => {
-    return true;
-  };
-
   return (
-    <LanguageContext.Provider value={{ lang, setLang }}>
-      <ThemeContext.Provider value={{ theme, setTheme }}>
-        <div className="App">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/works" element={<Works />} />
-              <Route path="/works/:id" element={<WorkView />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-      </ThemeContext.Provider>
-    </LanguageContext.Provider>
+    <div className="App">
+      <Routes />;
+    </div>
   );
 };
 

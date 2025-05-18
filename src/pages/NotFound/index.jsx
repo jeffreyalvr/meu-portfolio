@@ -1,17 +1,16 @@
-import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { LanguageContext } from "../../Contexts/LanguageContext";
+import book from "@language/book.json";
 
-import book from "../../language/book.json";
+import Nav from "@components/Nav";
+import { ActionButton } from "@components/Button";
 
-import Nav from "../../components/Nav";
-import { ActionButton } from "../../components/Button";
+import long_arrow_icon from "@assets/images/long_arrow.png";
 
-import long_arrow_icon from "../../assets/images/long_arrow.png";
+import useLanguageStore from "@/store/useLanguageStore";
 
 const NotFound = () => {
-  const { lang } = useContext(LanguageContext);
+  const language = useLanguageStore((state) => state.language);
 
   let navigate = useNavigate();
 
@@ -29,27 +28,27 @@ const NotFound = () => {
         </div>
         <div className="description">
           <h1>
-            {lang === "pt-br"
-              ? book.pt_br.pages.not_found_h1
-              : book.en_ca.pages.not_found_h1}
+            {language === "pt"
+              ? book.pt.pages.not_found_h1
+              : book.en.pages.not_found_h1}
           </h1>
           <span className="details">
-            {lang === "pt-br"
-              ? book.pt_br.pages.not_found_span_1
-              : book.en_ca.pages.not_found_span_1}
+            {language === "pt"
+              ? book.pt.pages.not_found_span_1
+              : book.en.pages.not_found_span_1}
           </span>
           <span className="details">
-            {lang === "pt-br"
-              ? book.pt_br.pages.not_found_span_2
-              : book.en_ca.pages.not_found_span_2}
+            {language === "pt"
+              ? book.pt.pages.not_found_span_2
+              : book.en.pages.not_found_span_2}
           </span>
 
           <div className="action-buttons">
             <ActionButton
               text={
-                lang === "pt-br"
-                  ? book.pt_br.pages.not_found_button
-                  : book.en_ca.pages.not_found_button
+                language === "pt"
+                  ? book.pt.pages.not_found_button
+                  : book.en.pages.not_found_button
               }
               overrideClass="invert-img-hover"
               icon={long_arrow_icon}

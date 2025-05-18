@@ -1,21 +1,20 @@
 import "./styles.css";
 
-import { useContext } from "react";
-import { LanguageContext } from "../../Contexts/LanguageContext";
+import book from "@language/book.json";
 
-import book from "../../language/book.json";
+import arrow_icon from "@assets/images/arrow.png";
 
-import arrow_icon from "../../assets/images/arrow.png";
+import useLanguageStore from "@/store/useLanguageStore";
 
 const FloatingButton = ({ scrollToSection }) => {
-  const { lang } = useContext(LanguageContext);
+  const language = useLanguageStore((state) => state.language);
 
   return (
     <button className="floating-button" onClick={() => scrollToSection(0)}>
       <img className="invert-img-face-up" src={arrow_icon} />
-      {lang === "pt-br"
-        ? book.pt_br.pages.floating_button_text
-        : book.en_ca.pages.floating_button_text}
+      {language === "pt"
+        ? book.pt.pages.floating_button_text
+        : book.en.pages.floating_button_text}
     </button>
   );
 };

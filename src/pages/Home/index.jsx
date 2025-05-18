@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 
-import book from "../../language/book.json";
+import book from "@language/book.json";
 
-import Nav from "../../components/Nav";
-import { DefaultHero } from "../../components/Hero";
-import Sections from "../../components/Sections";
-import Footer from "../../components/Footer";
-import Wrapper from "../../components/Wrapper";
-import FloatingButton from "../../components/FloatingButton";
+import Nav from "@components/Nav";
+import { DefaultHero } from "@components/Hero";
+import Sections from "@components/Sections";
+import Footer from "@components/Footer";
+import Wrapper from "@components/Wrapper";
+import FloatingButton from "@components/FloatingButton";
 
 const Home = () => {
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
@@ -52,32 +52,32 @@ const Home = () => {
         linkItems={[
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_work,
-              en_ca: book.en_ca.nav.nav_item_work,
+              pt: book.pt.nav.nav_item_work,
+              en: book.en.nav.nav_item_work,
             },
             sectionRef: section_works,
             sectionId: 1,
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_about,
-              en_ca: book.en_ca.nav.nav_item_about,
+              pt: book.pt.nav.nav_item_about,
+              en: book.en.nav.nav_item_about,
             },
             sectionRef: section_about,
             sectionId: 2,
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_stack,
-              en_ca: book.en_ca.nav.nav_item_stack,
+              pt: book.pt.nav.nav_item_stack,
+              en: book.en.nav.nav_item_stack,
             },
             sectionRef: section_stack,
             sectionId: 3,
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_contact,
-              en_ca: book.en_ca.nav.nav_item_contact,
+              pt: book.pt.nav.nav_item_contact,
+              en: book.en.nav.nav_item_contact,
             },
             sectionRef: section_contact,
             sectionId: 4,

@@ -1,39 +1,37 @@
-import { useContext } from "react";
-
-import { LanguageContext } from "../../Contexts/LanguageContext";
-
-import book from "../../language/book.json";
+import book from "@language/book.json";
 
 import "./styles.css";
 
-import send_icon from "../../assets/images/send.png";
+import send_icon from "@assets/images/send.png";
 
-import { ActionButton } from "../Button";
+import { ActionButton } from "@components/Button";
+
+import useLanguageStore from "@/store/useLanguageStore";
 
 const Contact = () => {
-  const { lang } = useContext(LanguageContext);
+  const language = useLanguageStore((state) => state.language);
 
   return (
     <div className="contact-container">
       <div className="contact-item">
         <div className="item-text">
           <span>
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_span_1
-              : book.en_ca.contact.cnt_span_1}
+            {language === "pt"
+              ? book.pt.contact.cnt_span_1
+              : book.en.contact.cnt_span_1}
           </span>
           <span className="required-lbl">
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_lbl_required
-              : book.en_ca.contact.cnt_lbl_required}
+            {language === "pt"
+              ? book.pt.contact.cnt_lbl_required
+              : book.en.contact.cnt_lbl_required}
           </span>
         </div>
         <input
           type="text"
           placeholder={
-            lang === "pt-br"
-              ? book.pt_br.contact.cnt_input_txt_fullname
-              : book.en_ca.contact.cnt_input_txt_fullname
+            language === "pt"
+              ? book.pt.contact.cnt_input_txt_fullname
+              : book.en.contact.cnt_input_txt_fullname
           }
           required
         />
@@ -41,22 +39,22 @@ const Contact = () => {
       <div className="contact-item">
         <div className="item-text">
           <span>
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_span_2
-              : book.en_ca.contact.cnt_span_2}
+            {language === "pt"
+              ? book.pt.contact.cnt_span_2
+              : book.en.contact.cnt_span_2}
           </span>
           <span className="required-lbl">
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_lbl_required
-              : book.en_ca.contact.cnt_lbl_required}
+            {language === "pt"
+              ? book.pt.contact.cnt_lbl_required
+              : book.en.contact.cnt_lbl_required}
           </span>
         </div>
         <input
           type="text"
           placeholder={
-            lang === "pt-br"
-              ? book.pt_br.contact.cnt_input_txt_generic
-              : book.en_ca.contact.cnt_input_txt_generic
+            language === "pt"
+              ? book.pt.contact.cnt_input_txt_generic
+              : book.en.contact.cnt_input_txt_generic
           }
           required
         />
@@ -64,22 +62,22 @@ const Contact = () => {
       <div className="contact-item">
         <div className="item-text">
           <span>
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_span_3
-              : book.en_ca.contact.cnt_span_3}
+            {language === "pt"
+              ? book.pt.contact.cnt_span_3
+              : book.en.contact.cnt_span_3}
           </span>
           <span className="required-lbl">
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_lbl_required
-              : book.en_ca.contact.cnt_lbl_required}
+            {language === "pt"
+              ? book.pt.contact.cnt_lbl_required
+              : book.en.contact.cnt_lbl_required}
           </span>
         </div>
         <input
           type="text"
           placeholder={
-            lang === "pt-br"
-              ? book.pt_br.contact.cnt_input_txt_generic
-              : book.en_ca.contact.cnt_input_txt_generic
+            language === "pt"
+              ? book.pt.contact.cnt_input_txt_generic
+              : book.en.contact.cnt_input_txt_generic
           }
           required
         />
@@ -87,21 +85,21 @@ const Contact = () => {
       <div className="contact-item">
         <div className="item-text">
           <span>
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_span_4
-              : book.en_ca.contact.cnt_span_4}
+            {language === "pt"
+              ? book.pt.contact.cnt_span_4
+              : book.en.contact.cnt_span_4}
           </span>
           <span className="required-lbl">
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_lbl_required
-              : book.en_ca.contact.cnt_lbl_required}
+            {language === "pt"
+              ? book.pt.contact.cnt_lbl_required
+              : book.en.contact.cnt_lbl_required}
           </span>
         </div>
         <textarea
           placeholder={
-            lang === "pt-br"
-              ? book.pt_br.contact.cnt_input_txt_message
-              : book.en_ca.contact.cnt_input_txt_message
+            language === "pt"
+              ? book.pt.contact.cnt_input_txt_message
+              : book.en.contact.cnt_input_txt_message
           }
           maxLength={1500}
           required
@@ -111,22 +109,22 @@ const Contact = () => {
       <div className="contact-item">
         <div className="item-text">
           <span>
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_span_5
-              : book.en_ca.contact.cnt_span_5}
+            {language === "pt"
+              ? book.pt.contact.cnt_span_5
+              : book.en.contact.cnt_span_5}
           </span>
           <span className="required-lbl">
-            {lang === "pt-br"
-              ? book.pt_br.contact.cnt_lbl_required
-              : book.en_ca.contact.cnt_lbl_required}
+            {language === "pt"
+              ? book.pt.contact.cnt_lbl_required
+              : book.en.contact.cnt_lbl_required}
           </span>
         </div>
         <input
           type="text"
           placeholder={
-            lang === "pt-br"
-              ? book.pt_br.contact.cnt_input_txt_generic
-              : book.en_ca.contact.cnt_input_txt_generic
+            language === "pt"
+              ? book.pt.contact.cnt_input_txt_generic
+              : book.en.contact.cnt_input_txt_generic
           }
           required
         />
@@ -136,9 +134,9 @@ const Contact = () => {
           <ActionButton
             overrideClass="invert-img-hover"
             text={
-              lang === "pt-br"
-                ? book.pt_br.contact.cnt_btn_send
-                : book.en_ca.contact.cnt_btn_send
+              language === "pt"
+                ? book.pt.contact.cnt_btn_send
+                : book.en.contact.cnt_btn_send
             }
             icon={send_icon}
             url=""

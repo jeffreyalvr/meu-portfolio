@@ -1,21 +1,20 @@
-import { useContext } from "react";
-import { LanguageContext } from "../../Contexts/LanguageContext";
+import book from "@language/book.json";
 
-import book from "../../language/book.json";
+import img_linkedin from "@assets/images/linkedin.png";
+import img_github from "@assets/images/github.png";
 
-import img_linkedin from "../../assets/images/linkedin.png";
-import img_github from "../../assets/images/github.png";
+import { LinkButton } from "@components/Button";
 
-import { LinkButton } from "../Button";
+import useLanguageStore from "@/store/useLanguageStore";
 
 const DefaultHero = ({ linkedin_url, github_url }) => {
-  const { lang } = useContext(LanguageContext);
+  const language = useLanguageStore((state) => state.language);
 
   return (
     <div className="hero">
       <div className="container move-up">
         <h1>
-          {lang === "pt-br" ? book.pt_br.hero.hero_h1 : book.en_ca.hero.hero_h1}
+          {language === "pt" ? book.pt.hero.hero_h1 : book.en.hero.hero_h1}
           <span>{"{ Jeffrey }"}</span>
         </h1>
 

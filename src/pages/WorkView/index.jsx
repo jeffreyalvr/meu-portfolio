@@ -1,14 +1,14 @@
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useEffect, useRef } from "react";
 
-import book from "../../language/book.json";
+import book from "@language/book.json";
 
-import Nav from "../../components/Nav";
-import { CompactHero } from "../../components/Hero";
-import Footer from "../../components/Footer";
-import Wrapper from "../../components/Wrapper";
-import FloatingButton from "../../components/FloatingButton";
-import { LinkButton, ActionButton } from "../../components/Button";
-import { Title, SubTitle } from "../../components/Text";
+import Nav from "@components/Nav";
+import { CompactHero } from "@components/Hero";
+import Footer from "@components/Footer";
+import Wrapper from "@components/Wrapper";
+import FloatingButton from "@components/FloatingButton";
+import { LinkButton, ActionButton } from "@components/Button";
+import { Title, SubTitle } from "@components/Text";
 
 import open_icon from "../../assets/images/open.png";
 import zoom_icon from "../../assets/images/zoom.png";
@@ -56,8 +56,8 @@ const WorkView = () => {
         linkItems={[
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_home,
-              en_ca: book.en_ca.nav.nav_item_home,
+              pt: book.pt.nav.nav_item_home,
+              en: book.en.nav.nav_item_home,
             },
             useLink: true,
             link: "/",
@@ -65,8 +65,8 @@ const WorkView = () => {
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_work,
-              en_ca: book.en_ca.nav.nav_item_work,
+              pt: book.pt.nav.nav_item_work,
+              en: book.en.nav.nav_item_work,
             },
             useLink: true,
             link: "/works",
@@ -74,8 +74,8 @@ const WorkView = () => {
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_contact,
-              en_ca: book.en_ca.nav.nav_item_contact,
+              pt: book.pt.nav.nav_item_contact,
+              en: book.en.nav.nav_item_contact,
             },
             useLink: true,
             link: "/contact",

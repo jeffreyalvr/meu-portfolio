@@ -1,24 +1,22 @@
-import React from "react";
-
 import "./styles.css";
 
-import img_css3 from "../../assets/images/css3.png";
-import img_figma from "../../assets/images/figma.png";
-import img_html5 from "../../assets/images/html5.png";
-import img_javascript from "../../assets/images/javascript.png";
-import img_typescript from "../../assets/images/typescript.png";
-import img_mongodb from "../../assets/images/mongodb.png";
-import img_nodejs from "../../assets/images/nodejs.png";
-import img_react from "../../assets/images/react.png";
-import img_sass from "../../assets/images/sass.png";
-import img_nextjs from "../../assets/images/nextjs.png";
-import img_bun from "../../assets/images/bun.png";
-import img_tailwind from "../../assets/images/tailwind.png";
-import img_materialui from "../../assets/images/materialui.png";
-import img_redux from "../../assets/images/redux.png";
-import img_astro from "../../assets/images/astro.png";
-import img_graphql from "../../assets/images/graphql.png";
-import img_electron from "../../assets/images/electron.png";
+import img_css3 from "@assets/images/css3.png";
+import img_figma from "@assets/images/figma.png";
+import img_html5 from "@assets/images/html5.png";
+import img_javascript from "@assets/images/javascript.png";
+import img_typescript from "@assets/images/typescript.png";
+import img_mongodb from "@assets/images/mongodb.png";
+import img_nodejs from "@assets/images/nodejs.png";
+import img_react from "@assets/images/react.png";
+import img_sass from "@assets/images/sass.png";
+import img_nextjs from "@assets/images/nextjs.png";
+import img_bun from "@assets/images/bun.png";
+import img_tailwind from "@assets/images/tailwind.png";
+import img_materialui from "@assets/images/materialui.png";
+import img_redux from "@assets/images/redux.png";
+import img_astro from "@assets/images/astro.png";
+import img_graphql from "@assets/images/graphql.png";
+import img_electron from "@assets/images/electron.png";
 
 const MinhaStack = () => {
   return (
@@ -70,10 +68,6 @@ const MinhaStack = () => {
       <div className="stack-item">
         <img src={img_tailwind} title="Tailwind" alt="Tailwind" />
         <span>Tailwind</span>
-      </div>
-      <div className="stack-item">
-        <img src={img_materialui} title="Material UI" alt="Material UI" />
-        <span>Material UI</span>
       </div>
       <div className="stack-item">
         <img src={img_figma} title="Figma" alt="Figma" />

@@ -1,23 +1,23 @@
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { LanguageContext } from "../../Contexts/LanguageContext";
+import book from "@language/book.json";
 
-import book from "../../language/book.json";
+import Nav from "@components/Nav";
+import { CompactHero } from "@components/Hero";
+import Footer from "@components/Footer";
+import Wrapper from "@components/Wrapper";
+import FloatingButton from "@components/FloatingButton";
+import { ActionButton } from "@components/Button";
+import { Title, SubTitle } from "@components/Text";
 
-import Nav from "../../components/Nav";
-import { CompactHero } from "../../components/Hero";
-import Footer from "../../components/Footer";
-import Wrapper from "../../components/Wrapper";
-import FloatingButton from "../../components/FloatingButton";
-import { ActionButton } from "../../components/Button";
-import { Title, SubTitle } from "../../components/Text";
+import thumb from "@assets/images/projects/thumb.png";
+import open_icon from "@assets/images/open.png";
 
-import thumb from "../../assets/images/projects/thumb.png";
-import open_icon from "../../assets/images/open.png";
+import useLanguageStore from "@/store/useLanguageStore";
 
 const Works = () => {
-  const { lang } = useContext(LanguageContext);
+  const language = useLanguageStore((state) => state.language);
 
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
@@ -64,8 +64,8 @@ const Works = () => {
         linkItems={[
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_home,
-              en_ca: book.en_ca.nav.nav_item_home,
+              pt: book.pt.nav.nav_item_home,
+              en: book.en.nav.nav_item_home,
             },
             useLink: true,
             link: "/",
@@ -73,8 +73,8 @@ const Works = () => {
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_work,
-              en_ca: book.en_ca.nav.nav_item_work,
+              pt: book.pt.nav.nav_item_work,
+              en: book.en.nav.nav_item_work,
             },
             useLink: false,
             sectionRef: section_works,
@@ -82,8 +82,8 @@ const Works = () => {
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_contact,
-              en_ca: book.en_ca.nav.nav_item_contact,
+              pt: book.pt.nav.nav_item_contact,
+              en: book.en.nav.nav_item_contact,
             },
             useLink: true,
             link: "/contact",
@@ -95,14 +95,14 @@ const Works = () => {
       <Wrapper>
         <section className="move-up" ref={section_works}>
           <Title>
-            {lang === "pt-br"
-              ? book.pt_br.sections.sec_works_title
-              : book.en_ca.sections.sec_works_title}
+            {language === "pt"
+              ? book.pt.sections.sec_works_title
+              : book.en.sections.sec_works_title}
           </Title>
           <SubTitle>
-            {lang === "pt-br"
-              ? book.pt_br.sections.sec_works_subtitle
-              : book.en_ca.sections.sec_works_subtitle}
+            {language === "pt"
+              ? book.pt.sections.sec_works_subtitle
+              : book.en.sections.sec_works_subtitle}
           </SubTitle>
 
           <div className="works">
@@ -111,9 +111,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -128,9 +128,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -145,9 +145,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -162,9 +162,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -179,9 +179,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -196,9 +196,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -213,9 +213,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}
@@ -230,9 +230,9 @@ const Works = () => {
                 <ActionButton
                   overrideClass="invert-img-hover my-20 hidden"
                   text={
-                    lang === "pt-br"
-                      ? book.pt_br.sections.sec_works_project_button
-                      : book.en_ca.sections.sec_works_project_button
+                    language === "pt"
+                      ? book.pt.sections.sec_works_project_button
+                      : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
                   func={handleViewProject}

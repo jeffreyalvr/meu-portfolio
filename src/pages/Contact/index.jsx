@@ -1,20 +1,19 @@
 import { useState, useEffect, useRef } from "react";
 
-import { useContext } from "react";
-import { LanguageContext } from "../../Contexts/LanguageContext";
+import book from "@language/book.json";
 
-import book from "../../language/book.json";
+import Nav from "@components/Nav";
+import { CompactHero } from "@components/Hero";
+import Footer from "@components/Footer";
+import Wrapper from "@components/Wrapper";
+import ContactComponent from "@components/Contact";
+import FloatingButton from "@components/FloatingButton";
+import { Title, SubTitle } from "@components/Text";
 
-import Nav from "../../components/Nav";
-import { CompactHero } from "../../components/Hero";
-import Footer from "../../components/Footer";
-import Wrapper from "../../components/Wrapper";
-import ContactComponent from "../../components/Contact";
-import FloatingButton from "../../components/FloatingButton";
-import { Title, SubTitle } from "../../components/Text";
+import useLanguageStore from "@/store/useLanguageStore";
 
 const Contact = () => {
-  const { lang } = useContext(LanguageContext);
+  const language = useLanguageStore((state) => state.language);
 
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
@@ -55,8 +54,8 @@ const Contact = () => {
         linkItems={[
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_home,
-              en_ca: book.en_ca.nav.nav_item_home,
+              pt: book.pt.nav.nav_item_home,
+              en: book.en.nav.nav_item_home,
             },
             useLink: true,
             link: "/",
@@ -64,8 +63,8 @@ const Contact = () => {
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_work,
-              en_ca: book.en_ca.nav.nav_item_work,
+              pt: book.pt.nav.nav_item_work,
+              en: book.en.nav.nav_item_work,
             },
             useLink: true,
             link: "/works",
@@ -73,8 +72,8 @@ const Contact = () => {
           },
           {
             page: {
-              pt_br: book.pt_br.nav.nav_item_contact,
-              en_ca: book.en_ca.nav.nav_item_contact,
+              pt: book.pt.nav.nav_item_contact,
+              en: book.en.nav.nav_item_contact,
             },
             useLink: false,
             sectionRef: section_contact,
@@ -86,20 +85,20 @@ const Contact = () => {
       <Wrapper>
         <section className="move-up" ref={section_contact}>
           <Title>
-            {lang === "pt-br"
-              ? book.pt_br.sections.sec_contact_title
-              : book.en_ca.sections.sec_contact_title}
+            {language === "pt"
+              ? book.pt.sections.sec_contact_title
+              : book.en.sections.sec_contact_title}
           </Title>
           <SubTitle>
-            {lang === "pt-br"
-              ? book.pt_br.sections.sec_contact_subtitle_1
-              : book.en_ca.sections.sec_contact_subtitle_1}
+            {language === "pt"
+              ? book.pt.sections.sec_contact_subtitle_1
+              : book.en.sections.sec_contact_subtitle_1}
           </SubTitle>
           <br />
           <SubTitle>
-            {lang === "pt-br"
-              ? book.pt_br.sections.sec_contact_subtitle_2
-              : book.en_ca.sections.sec_contact_subtitle_2}
+            {language === "pt"
+              ? book.pt.sections.sec_contact_subtitle_2
+              : book.en.sections.sec_contact_subtitle_2}
           </SubTitle>
           <ContactComponent />
         </section>
