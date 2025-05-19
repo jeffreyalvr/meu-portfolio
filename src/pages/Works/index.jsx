@@ -11,8 +11,8 @@ import FloatingButton from "@components/FloatingButton";
 import { ActionButton } from "@components/Button";
 import { Title, SubTitle } from "@components/Text";
 
-import thumb from "@assets/images/projects/thumb.png";
-import open_icon from "@assets/images/open.png";
+import open_icon from "@assets/icons/open.png";
+import thumb_img from "@assets/images/thumb.png";
 
 import useLanguageStore from "@/store/useLanguageStore";
 
@@ -120,7 +120,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -137,7 +137,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -154,7 +154,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -171,7 +171,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -188,7 +188,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -205,7 +205,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -222,7 +222,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
 
             <div className="work-item">
@@ -239,7 +239,7 @@ const Works = () => {
                 />
                 <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb} />
+              <img className="banner" src={thumb_img} />
             </div>
           </div>
         </section>

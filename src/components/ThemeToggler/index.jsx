@@ -3,8 +3,8 @@ import book from "@language/book.json";
 import useThemeStore from "@/store/useThemeStore";
 import useLanguageStore from "@/store/useLanguageStore";
 
-import sun_icon from "@assets/images/sun.png";
-import moon_icon from "@assets/images/moon.png";
+import sun_icon from "@assets/icons/sun.png";
+import moon_icon from "@assets/icons/moon.png";
 
 import "./styles.css";
 

@@ -5,7 +5,7 @@ import book from "@language/book.json";
 import Nav from "@components/Nav";
 import { ActionButton } from "@components/Button";
 
-import long_arrow_icon from "@assets/images/long_arrow.png";
+import long_arrow_icon from "@assets/icons/long_arrow.png";
 
 import useLanguageStore from "@/store/useLanguageStore";
 

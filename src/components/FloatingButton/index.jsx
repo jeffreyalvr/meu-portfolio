@@ -2,7 +2,7 @@ import "./styles.css";
 
 import book from "@language/book.json";
 
-import arrow_icon from "@assets/images/arrow.png";
+import arrow_icon from "@assets/icons/arrow.png";
 
 import useLanguageStore from "@/store/useLanguageStore";
 

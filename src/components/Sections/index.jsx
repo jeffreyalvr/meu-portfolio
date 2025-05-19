@@ -4,7 +4,7 @@ import "./styles.css";
 
 import { Title, SubTitle } from "@components/Text";
 
-import img_linkedin from "@assets/images/linkedin.png";
+import img_linkedin from "@assets/icons/linkedin.png";
 import img_profile from "@assets/images/profile.jpeg";
 
 import { LinkButton } from "@components/Button";

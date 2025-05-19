@@ -12,7 +12,6 @@ import img_sass from "@assets/images/sass.png";
 import img_nextjs from "@assets/images/nextjs.png";
 import img_bun from "@assets/images/bun.png";
 import img_tailwind from "@assets/images/tailwind.png";
-import img_materialui from "@assets/images/materialui.png";
 import img_redux from "@assets/images/redux.png";
 import img_astro from "@assets/images/astro.png";
 import img_graphql from "@assets/images/graphql.png";

@@ -1,7 +1,7 @@
 import book from "@language/book.json";
 
-import img_linkedin from "@assets/images/linkedin.png";
-import img_github from "@assets/images/github.png";
+import img_linkedin from "@assets/icons/linkedin.png";
+import img_github from "@assets/icons/github.png";
 
 import { LinkButton } from "@components/Button";
 

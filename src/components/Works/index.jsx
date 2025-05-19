@@ -6,9 +6,9 @@ import "./styles.css";
 
 import { ActionButton } from "@components/Button";
 
-import thumb from "@assets/images/projects/thumb.png";
-import view_all_icon from "@assets/images/view_all.png";
-import open_icon from "@assets/images/open.png";
+import thumb_img from "@assets/images/thumb.png";
+import view_all_icon from "@assets/icons/view_all.png";
+import open_icon from "@assets/icons/open.png";
 
 import useLanguageStore from "@/store/useLanguageStore";
 
@@ -43,7 +43,7 @@ const Works = () => {
           />
           <h3>Github Repo Browser</h3>
         </div>
-        <img className="banner" src={thumb} />
+        <img className="banner" src={thumb_img} />
       </div>
 
       <div className="work-item">
@@ -60,7 +60,7 @@ const Works = () => {
           />
           <h3>Buscador Imagens</h3>
         </div>
-        <img className="banner" src={thumb} />
+        <img className="banner" src={thumb_img} />
       </div>
 
       <div className="work-item">
@@ -77,7 +77,7 @@ const Works = () => {
           />
           <h3>Weather App</h3>
         </div>
-        <img className="banner" src={thumb} />
+        <img className="banner" src={thumb_img} />
       </div>
 
       <div className="work-item">
@@ -94,7 +94,7 @@ const Works = () => {
           />
           <h3>Todo List Simples</h3>
         </div>
-        <img className="banner" src={thumb} />
+        <img className="banner" src={thumb_img} />
       </div>
 
       <div className="work-item">
@@ -111,7 +111,7 @@ const Works = () => {
           />
           <h3>Minha Lista de Compras</h3>
         </div>
-        <img className="banner" src={thumb} />
+        <img className="banner" src={thumb_img} />
       </div>
 
       <div className="work-item">

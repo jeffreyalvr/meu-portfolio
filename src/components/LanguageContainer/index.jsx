@@ -4,8 +4,8 @@ import book from "@language/book.json";
 
 import useLanguageStore from "@/store/useLanguageStore";
 
-import down_arrow_icon from "@assets/images/arrow.png";
-import language_icon from "@assets/images/language.png";
+import down_arrow_icon from "@assets/icons/arrow.png";
+import language_icon from "@assets/icons/language.png";
 
 import LanguageItem from "./LanguageItem";
 

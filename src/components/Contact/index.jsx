@@ -2,7 +2,7 @@ import book from "@language/book.json";
 
 import "./styles.css";
 
-import send_icon from "@assets/images/send.png";
+import send_icon from "@assets/icons/send.png";
 
 import { ActionButton } from "@components/Button";
 
