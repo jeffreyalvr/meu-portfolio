@@ -115,21 +115,14 @@ section .project-gallery {
   display: flex;
   flex-wrap: wrap;
   margin: 60px 0;
-}
-
-section .project-gallery .item {
-  flex: 1 1 auto;
-  height: 350px;
-  position: relative;
-  border-radius: 15px;
-  background: var(--works-bg-gradient);
+  border-radius: 20px;
   overflow: hidden;
 }
 
-section .project-gallery .item img {
-  object-fit: cover;
+section .project-gallery img {
+  object-fit: scale-down;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   max-height: 700px;
   image-rendering: auto;
   background-position: center;
@@ -138,30 +131,9 @@ section .project-gallery .item img {
   transition: ease-in 0.3s;
 }
 
-section .project-gallery .item:hover + img,
-section .project-gallery .item img:hover {
+section .project-gallery img:hover {
   transition: ease-in 0.3s;
   transform: scale(1.1);
-}
-
-section .project-gallery .item .item-container {
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  padding: 30px;
-}
-
-section .project-gallery .item .item-container button {
-  width: max-content;
-}
-
-section .project-gallery .item:hover button.hidden {
-  display: inline-flex !important;
-  align-items: center;
 }
 
 @media screen and (max-width: 1500px) {
