@@ -1,6 +1,6 @@
 .language-container {
   border-radius: 50px;
-  background-color: #c8c8c8;
+  background-color: var(--border-color);
   height: 40px;
   width: auto;
   display: flex;
@@ -10,6 +10,13 @@
   position: relative;
   padding: 0 15px;
   z-index: 1;
+}
+
+.language-container .active-language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .language-container .item img.arrow {
@@ -25,7 +32,7 @@
 }
 
 .language-container .item {
-  background-color: #c8c8c8;
+  background-color: var(--border-color);
   padding: 0 15px;
   height: 40px;
   width: 100%;

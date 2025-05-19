@@ -18,20 +18,21 @@ const LanguageContainer = () => {
 
   return (
     <div className="language-container">
-      <img src={language_icon} alt="A" />
+      <div className="active-language">
+        <img src={language_icon} alt="A" />
 
-      <LanguageItem
-        languageName={book[`languages_${activeLanguage}`]}
-        appTitle={book[`languages_${activeLanguage}_title`]}
-        targetLanguage={activeLanguage}
-      />
+        <LanguageItem
+          languageName={book[`languages_${activeLanguage}`]}
+          appTitle={book[`languages_${activeLanguage}_title`]}
+          targetLanguage={activeLanguage}
+        />
 
-      <img
-        className="arrow invert-img invert-img-180-deg"
-        src={down_arrow_icon}
-        alt=">"
-      />
-
+        <img
+          className="arrow invert-img invert-img-180-deg"
+          src={down_arrow_icon}
+          alt=">"
+        />
+      </div>
       <div className="other-languages">
         <LanguageItem
           languageName={book[`languages_${otherLanguage}`]}

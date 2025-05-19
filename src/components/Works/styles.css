@@ -14,7 +14,7 @@
   width: 377px;
   position: relative;
   transition: ease-in 0.2s;
-  background: var(--works-bg-gradient);
+  background-color: var(--works-bg);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -40,14 +40,14 @@
 }
 
 .works .work-item:hover {
-  background-color: #bcbcbc;
+  background-color: var(--works-bg-hover);
 }
 
 .works .work-item .item-container h3 {
   font-weight: 300;
   width: 100%;
   font-size: 18px;
-  color: #000;
+  color: var(--fg-light);
 }
 
 .works .work-item .item-container button {

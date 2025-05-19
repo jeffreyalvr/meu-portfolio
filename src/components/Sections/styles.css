@@ -5,6 +5,10 @@ section {
   padding: 50px;
 }
 
+section p {
+  color: var(--fg-light);
+}
+
 section .bio {
   margin: 40px 0;
   display: flex;
@@ -69,7 +73,7 @@ section .bio .description .action-buttons img {
 
 section .separator {
   margin: 60px 0;
-  background: #c4c4c4;
+  background: var(--border-color);
   height: 1px;
   width: 100%;
 }

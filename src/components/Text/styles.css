@@ -1,9 +1,10 @@
 h2 {
   font-size: 46px;
-  color: #000;
+  color: var(--fg-dark);
   margin: 15px 0;
 }
 
 span {
   font-size: 18px;
+  color: var(--fg-light);
 }
