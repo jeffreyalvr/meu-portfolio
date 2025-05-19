@@ -51,6 +51,10 @@ nav .nav-container .links .item:hover {
   cursor: pointer;
 }
 
+nav .nav-container .links .item.active:hover {
+  border: 1px solid #000;
+}
+
 nav .nav-container .links .item a:hover {
   color: #fff;
 }
