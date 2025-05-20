@@ -118,5 +118,53 @@
         "content": ""
       }
     }
+  },
+  {
+    "id": 6,
+    "project_demo_url": "https://projeto-math-hub.vercel.app/",
+    "title": "Math::Hub",
+    "stack_items": ["React JS (Vite)"],
+    "pt": {
+      "subtitle": "",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": ""
+      }
+    },
+    "en": {
+      "subtitle": "",
+      "roles": {
+        "content": ""
+      },
+      "description": {
+        "content": ""
+      }
+    }
+  },
+  {
+    "id": 7,
+    "project_demo_url": "https://japanese-trainer.vercel.app/",
+    "title": "Japanese Trainer",
+    "stack_items": ["React JS (Vite)"],
+    "pt": {
+      "subtitle": "",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": ""
+      }
+    },
+    "en": {
+      "subtitle": "",
+      "roles": {
+        "content": ""
+      },
+      "description": {
+        "content": ""
+      }
+    }
   }
 ]
