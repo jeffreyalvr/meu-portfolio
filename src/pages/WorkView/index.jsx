@@ -95,10 +95,12 @@ const WorkView = () => {
               </div>
               <div className="item">
                 <b>Stack utilizada</b>
-                <p>React JS (Vite)</p>
-                <p>LocalStorage</p>
-                <p>Axios</p>
-                <p>API Github</p>
+                <div className="stack-container">
+                  <div className="tag">React JS (Vite)</div>
+                  <div className="tag">LocalStorage</div>
+                  <div className="tag">Axios</div>
+                  <div className="tag">API Github</div>
+                </div>
               </div>
             </div>
             <div className="right-panel">
