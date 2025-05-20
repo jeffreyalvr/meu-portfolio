@@ -99,7 +99,7 @@ section .project-summary .left-panel .item {
   width: auto;
 }
 
-section .project-summary b {
+section b {
   color: var(--red);
   margin: 0 0 10px 0;
   display: inline-flex;
@@ -144,7 +144,6 @@ section .project-gallery {
   flex-wrap: wrap;
   margin: 60px 0;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 section .project-gallery img {
@@ -157,6 +156,7 @@ section .project-gallery img {
   background-repeat: no-repeat;
   background-size: contain;
   transition: ease-in 0.3s;
+  border-radius: 20px;
 }
 
 section .project-gallery img:hover {

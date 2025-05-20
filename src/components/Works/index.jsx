@@ -32,6 +32,38 @@ const Works = () => {
                 : book.en.sections.sec_works_project_button
             }
             icon={open_icon}
+            func={() => handleNavigate("/works/7")}
+          />
+        </div>
+        <h3>Japanese Trainer</h3>
+      </div>
+
+      <div className="work-item">
+        <div className="hover-overlay">
+          <ActionButton
+            overrideClass="invert-img-hover"
+            text={
+              language === "pt"
+                ? book.pt.sections.sec_works_project_button
+                : book.en.sections.sec_works_project_button
+            }
+            icon={open_icon}
+            func={() => handleNavigate("/works/6")}
+          />
+        </div>
+        <h3>Math::Hub</h3>
+      </div>
+
+      <div className="work-item">
+        <div className="hover-overlay">
+          <ActionButton
+            overrideClass="invert-img-hover"
+            text={
+              language === "pt"
+                ? book.pt.sections.sec_works_project_button
+                : book.en.sections.sec_works_project_button
+            }
+            icon={open_icon}
             func={() => handleNavigate("/works/1")}
           />
         </div>
@@ -68,38 +100,6 @@ const Works = () => {
           />
         </div>
         <h3>Weather App</h3>
-      </div>
-
-      <div className="work-item">
-        <div className="hover-overlay">
-          <ActionButton
-            overrideClass="invert-img-hover"
-            text={
-              language === "pt"
-                ? book.pt.sections.sec_works_project_button
-                : book.en.sections.sec_works_project_button
-            }
-            icon={open_icon}
-            func={() => handleNavigate("/works/4")}
-          />
-        </div>
-        <h3>Todo List Simples</h3>
-      </div>
-
-      <div className="work-item">
-        <div className="hover-overlay">
-          <ActionButton
-            overrideClass="invert-img-hover"
-            text={
-              language === "pt"
-                ? book.pt.sections.sec_works_project_button
-                : book.en.sections.sec_works_project_button
-            }
-            icon={open_icon}
-            func={() => handleNavigate("/works/5")}
-          />
-        </div>
-        <h3>Minha Lista de Compras</h3>
       </div>
 
       <div className="work-item">

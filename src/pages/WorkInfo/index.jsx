@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 import book from "@language/book.json";
 
@@ -12,9 +12,18 @@ import FloatingButton from "@components/FloatingButton";
 import { LinkButton } from "@components/Button";
 import { Title, SubTitle } from "@components/Text";
 
+import thumb_img from "@assets/images/thumb.png";
 import open_icon from "@assets/icons/open.png";
 
 import useLanguageStore from "@/store/useLanguageStore";
+
+import proj_1 from "@assets/thumbnails/github-repo-browser.png";
+import proj_2 from "@assets/thumbnails/buscador-imagens.png";
+import proj_3 from "@assets/thumbnails/weather-app.png";
+import proj_4 from "@assets/thumbnails/todo-list-simples.png";
+import proj_5 from "@assets/thumbnails/lista-de-compras.png";
+import proj_6 from "@assets/thumbnails/math-hub.png";
+import proj_7 from "@assets/thumbnails/japanese-trainer.png";
 
 import works from "@works/works.json";
 
@@ -52,7 +61,11 @@ const WorkInfo = () => {
     });
   };
 
-  return (
+  const work = works.find((work) => work.id === idFromParams);
+
+  return !work ? (
+    <Navigate to="/404" replace />
+  ) : (
     <>
       <Nav
         activeSection={activeSection}
@@ -152,7 +165,8 @@ const WorkInfo = () => {
             </div>
           </div>
           <div className="project-gallery">
-            <img src="" />
+            <b>Thumbnail</b>
+            <img src={thumb_img} />
           </div>
         </section>
         <Footer />
