@@ -33,8 +33,7 @@
       "sec_works_all_projects_button": "Ver todos os projetos",
       "sec_works_project_button": "Ver",
       "sec_about_title": "Sobre",
-      "sec_about_subtitle": "Conheça toda a minha jornada até o momento atual.",
-      "sec_about_span_nationality": "Brasileiro",
+      "sec_about_span_nationality": "Brasileiro.",
       "sec_about_span_spoken_languages": "Falante de Português, Inglês e Francês.",
       "sec_about_span_role": "Desenvolvedor WEB.",
       "sec_stack_title": "Stack",
@@ -42,12 +41,6 @@
       "sec_contact_title": "Contato",
       "sec_contact_subtitle_1": "Você pode entrar em contato comigo através do formulário abaixo.",
       "sec_contact_subtitle_2": "Retornarei a mensagem assim que possível."
-    },
-    "roadmap": {
-      "rm_span_1": "Início da graduação em Ciências da Computação",
-      "rm_span_2": "Estágio na Fábrica de Software - UNIPÊ",
-      "rm_span_3": "Início da pós-graduação em Desenvolvimento para Aplicações Web",
-      "rm_span_4": "Lançamento do site e portfólio"
     },
     "contact": {
       "cnt_span_1": "Qual o seu nome?",
@@ -91,8 +84,7 @@
       "sec_works_all_projects_button": "See all projects",
       "sec_works_project_button": "View",
       "sec_about_title": "About",
-      "sec_about_subtitle": "Get to know my journey up to this moment.",
-      "sec_about_span_nationality": "Brazilian",
+      "sec_about_span_nationality": "Brazilian.",
       "sec_about_span_spoken_languages": "Speaks Portuguese, English and French.",
       "sec_about_span_role": "WEB Developer.",
       "sec_stack_title": "Stack",
@@ -100,12 +92,6 @@
       "sec_contact_title": "Contact",
       "sec_contact_subtitle_1": "You can reach me by filling the following contact form bellow.",
       "sec_contact_subtitle_2": "I'll get back to you as soon as possible."
-    },
-    "roadmap": {
-      "rm_span_1": "Began studying Computer Science",
-      "rm_span_2": "Internship in Fábrica de Software - UNIPÊ",
-      "rm_span_3": "Began studying Web Applications Development",
-      "rm_span_4": "Released my website and portfolio online"
     },
     "contact": {
       "cnt_span_1": "What is your name?",
