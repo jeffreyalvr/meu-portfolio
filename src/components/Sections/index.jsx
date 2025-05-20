@@ -10,7 +10,6 @@ import img_profile from "@assets/images/profile.jpeg";
 import { LinkButton } from "@components/Button";
 
 import Works from "@components/Works";
-import Roadmap from "@components/Roadmap";
 import MinhaStack from "@components/MinhaStack";
 import Contact from "@components/Contact";
 
@@ -41,17 +40,12 @@ const Sections = ({ linkedin_url, sections }) => {
             ? book.pt.sections.sec_about_title
             : book.en.sections.sec_about_title}
         </Title>
-        <SubTitle>
-          {language === "pt"
-            ? book.pt.sections.sec_about_subtitle
-            : book.en.sections.sec_about_subtitle}
-        </SubTitle>
         <div className="bio">
           <img src={img_profile} title="Jeffrey" alt="Foto" />
           <div className="description">
             <div className="main">
               <div className="tag">
-                <span className="title">Jeffrey, 27</span>
+                <span className="title">Jeffrey, 28</span>
               </div>
               <div className="additional">
                 <span>
@@ -80,7 +74,6 @@ const Sections = ({ linkedin_url, sections }) => {
             </div>
           </div>
         </div>
-        <Roadmap />
       </section>
 
       <section className="move-up" ref={sections.stack}>
