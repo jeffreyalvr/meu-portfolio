@@ -13,7 +13,7 @@ import { Title, SubTitle } from "@components/Text";
 import open_icon from "@assets/icons/open.png";
 import github_repo_browser_img from "@assets/thumbnails/github-repo-browser.png";
 
-const WorkView = () => {
+const WorkInfo = () => {
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
 
@@ -133,4 +133,4 @@ const WorkView = () => {
   );
 };
 
-export default WorkView;
+export default WorkInfo;
