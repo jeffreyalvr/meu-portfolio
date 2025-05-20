@@ -1,73 +1,77 @@
 .works {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(377px, auto));
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  flex-wrap: wrap;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 40px 0;
-  overflow: hidden;
 }
 
 .works .work-item {
-  background-color: #ccc;
-  height: 525px;
-  width: 377px;
-  position: relative;
-  transition: ease-in 0.2s;
-  background-color: var(--works-bg);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #ccc;
+  height: auto;
+  width: 100%;
+  transition: ease-in 0.2s;
+  background-color: var(--works-bg);
+  border-radius: 15px;
+  padding: 50px 30px;
+  color: var(--fg-light);
+  position: relative;
+}
+
+.works .work-item .hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--works-bg-hover);
+  display: flex;
+  justify-content: center;
   align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 5;
   border-radius: 15px;
 }
 
-.works .work-item:hover button.hidden {
-  display: inline-flex !important;
-  align-items: center;
+.works .work-item:hover .hover-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.works .work-item .item-container {
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.works .work-item button.hidden {
+  display: none;
+  z-index: 10;
   position: absolute;
-  z-index: 1;
-  bottom: 0;
-  padding: 30px;
+}
+
+.works .work-item:hover button.hidden {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .works .work-item:hover {
   background-color: var(--works-bg-hover);
 }
 
-.works .work-item .item-container h3 {
+.works .work-item h3 {
   font-weight: 300;
   width: 100%;
   font-size: 18px;
   color: var(--fg-light);
 }
 
-.works .work-item .item-container button {
-  width: max-content;
-}
-
-.works .work-item img.banner {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: ease-in 0.3s;
-}
-
-.works .work-item img.banner:hover,
-.works .work-item .item-container:hover + img {
-  transition: ease-in 0.3s;
-  transform: scale(1.1);
+@media screen and (max-width: 1500px) {
+  .works {
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -77,34 +81,8 @@
     flex-direction: column;
     justify-content: center;
   }
-  .works .work-item {
-    height: auto;
-    width: 100%;
-  }
-  .works .work-item img.banner {
-    display: none;
-  }
-  .works .work-item .item-container {
-    position: unset;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .works .work-item .item-container button.hidden {
-    display: inline-flex !important;
-    align-items: center;
-  }
-}
 
-@media screen and (max-width: 500px) {
-  .works .work-item .item-container {
-    flex-direction: column;
-  }
-  .works .work-item .item-container button.my-20 {
-    margin: 5px 0;
-  }
-  .works .work-item .item-container h3 {
-    text-align: center;
+  .works .work-item {
+    width: 100%;
   }
 }

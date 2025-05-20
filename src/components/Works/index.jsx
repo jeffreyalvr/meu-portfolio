@@ -7,6 +7,7 @@ import "./styles.css";
 import { ActionButton } from "@components/Button";
 
 import thumb_img from "@assets/images/thumb.png";
+
 import view_all_icon from "@assets/icons/view_all.png";
 import open_icon from "@assets/icons/open.png";
 
@@ -30,9 +31,9 @@ const Works = () => {
   return (
     <div className="works">
       <div className="work-item">
-        <div className="item-container">
+        <div className="hover-overlay">
           <ActionButton
-            overrideClass="invert-img-hover my-20 hidden"
+            overrideClass="invert-img-hover"
             text={
               language === "pt"
                 ? book.pt.sections.sec_works_project_button
@@ -41,15 +42,14 @@ const Works = () => {
             icon={open_icon}
             func={handleViewProject}
           />
-          <h3>Github Repo Browser</h3>
         </div>
-        <img className="banner" src={thumb_img} />
+        <h3>Github Repo Browser</h3>
       </div>
 
       <div className="work-item">
-        <div className="item-container">
+        <div className="hover-overlay">
           <ActionButton
-            overrideClass="invert-img-hover my-20 hidden"
+            overrideClass="invert-img-hover"
             text={
               language === "pt"
                 ? book.pt.sections.sec_works_project_button
@@ -58,15 +58,14 @@ const Works = () => {
             icon={open_icon}
             func={handleViewProject}
           />
-          <h3>Buscador Imagens</h3>
         </div>
-        <img className="banner" src={thumb_img} />
+        <h3>Buscador Imagens</h3>
       </div>
 
       <div className="work-item">
-        <div className="item-container">
+        <div className="hover-overlay">
           <ActionButton
-            overrideClass="invert-img-hover my-20 hidden"
+            overrideClass="invert-img-hover"
             text={
               language === "pt"
                 ? book.pt.sections.sec_works_project_button
@@ -75,15 +74,14 @@ const Works = () => {
             icon={open_icon}
             func={handleViewProject}
           />
-          <h3>Weather App</h3>
         </div>
-        <img className="banner" src={thumb_img} />
+        <h3>Weather App</h3>
       </div>
 
       <div className="work-item">
-        <div className="item-container">
+        <div className="hover-overlay">
           <ActionButton
-            overrideClass="invert-img-hover my-20 hidden"
+            overrideClass="invert-img-hover"
             text={
               language === "pt"
                 ? book.pt.sections.sec_works_project_button
@@ -92,15 +90,14 @@ const Works = () => {
             icon={open_icon}
             func={handleViewProject}
           />
-          <h3>Todo List Simples</h3>
         </div>
-        <img className="banner" src={thumb_img} />
+        <h3>Todo List Simples</h3>
       </div>
 
       <div className="work-item">
-        <div className="item-container">
+        <div className="hover-overlay">
           <ActionButton
-            overrideClass="invert-img-hover my-20 hidden"
+            overrideClass="invert-img-hover"
             text={
               language === "pt"
                 ? book.pt.sections.sec_works_project_button
@@ -109,22 +106,32 @@ const Works = () => {
             icon={open_icon}
             func={handleViewProject}
           />
-          <h3>Minha Lista de Compras</h3>
         </div>
-        <img className="banner" src={thumb_img} />
+        <h3>Minha Lista de Compras</h3>
       </div>
 
       <div className="work-item">
-        <ActionButton
-          overrideClass="invert-img-hover my-20"
-          text={
-            language === "pt"
-              ? book.pt.sections.sec_works_all_projects_button
-              : book.en.sections.sec_works_all_projects_button
-          }
-          icon={view_all_icon}
-          func={handleWorksPage}
-        />
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            height: "100%",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <ActionButton
+            overrideClass="invert-img-hover"
+            text={
+              language === "pt"
+                ? book.pt.sections.sec_works_all_projects_button
+                : book.en.sections.sec_works_all_projects_button
+            }
+            icon={view_all_icon}
+            func={handleWorksPage}
+          />
+        </div>
       </div>
     </div>
   );
