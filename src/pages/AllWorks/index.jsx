@@ -50,9 +50,8 @@ const AllWorks = () => {
 
   let navigate = useNavigate();
 
-  const handleViewProject = () => {
-    let path = "/works/1";
-    navigate(path);
+  const handleNavigate = (url) => {
+    navigate(url);
   };
 
   return (
@@ -115,7 +114,7 @@ const AllWorks = () => {
                       : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
-                  func={handleViewProject}
+                  func={() => handleNavigate("/works/1")}
                 />
               </div>
               <h3>Github Repo Browser</h3>
@@ -131,7 +130,7 @@ const AllWorks = () => {
                       : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
-                  func={handleViewProject}
+                  func={() => handleNavigate("/works/2")}
                 />
               </div>
               <h3>Buscador Imagens</h3>
@@ -147,7 +146,7 @@ const AllWorks = () => {
                       : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
-                  func={handleViewProject}
+                  func={() => handleNavigate("/works/3")}
                 />
               </div>
               <h3>Weather App</h3>
@@ -163,7 +162,7 @@ const AllWorks = () => {
                       : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
-                  func={handleViewProject}
+                  func={() => handleNavigate("/works/4")}
                 />
               </div>
               <h3>Todo List Simples</h3>
@@ -179,7 +178,7 @@ const AllWorks = () => {
                       : book.en.sections.sec_works_project_button
                   }
                   icon={open_icon}
-                  func={handleViewProject}
+                  func={() => handleNavigate("/works/5")}
                 />
               </div>
               <h3>Minha Lista de Compras</h3>
