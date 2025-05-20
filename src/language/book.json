@@ -53,6 +53,12 @@
       "cnt_input_txt_fullname": "Digite seu nome completo",
       "cnt_input_txt_generic": "Digite aqui...",
       "cnt_input_txt_message": "Mensagem"
+    },
+    "workInfo": {
+      "wks_b_1": "Minha atribuição",
+      "wks_b_2": "Stack utilizada",
+      "wks_b_3": "Descrição",
+      "wks_button": "Abrir demonstração"
     }
   },
   "en": {
@@ -104,6 +110,12 @@
       "cnt_input_txt_fullname": "Type your full name",
       "cnt_input_txt_generic": "Type here...",
       "cnt_input_txt_message": "Message"
+    },
+    "workInfo": {
+      "wks_b_1": "My Roles",
+      "wks_b_2": "Stack",
+      "wks_b_3": "Description",
+      "wks_button": "View demo"
     }
   }
 }

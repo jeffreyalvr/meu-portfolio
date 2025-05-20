@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "project_demo_url": "https://github-repo-browser.vercel.app/",
+    "title": "GitHub Repo Browser",
+    "stack_items": ["React JS (Vite)", "LocalStorage", "Axios", "API GitHub"],
+    "pt": {
+      "subtitle": "Buscador de usuários e seus repositórios públicos no GitHub.",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": "A aplicação traz um ambiente organizado para busca de usuários do GitHub, e lista alguns dos seus detalhes mais importantes: repositórios públicos, os detalhes destes repositórios e outras informações gerais do usuário, como: seguidores, quantidade de repositórios e links."
+      }
+    },
+    "en": {
+      "subtitle": "---",
+      "roles": {
+        "content": "---"
+      },
+      "description": {
+        "content": "---"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "project_demo_url": "https://buscador-imagens.vercel.app/",
+    "title": "Buscador Imagens",
+    "stack_items": ["React JS (Vite)"],
+    "pt": {
+      "subtitle": "",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": ""
+      }
+    },
+    "en": {
+      "subtitle": "",
+      "roles": {
+        "content": ""
+      },
+      "description": {
+        "content": ""
+      }
+    }
+  },
+  {
+    "id": 3,
+    "project_demo_url": "https://projeto-weather-app.vercel.app/",
+    "title": "Weather App",
+    "stack_items": ["React JS (Vite)"],
+    "pt": {
+      "subtitle": "",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": ""
+      }
+    },
+    "en": {
+      "subtitle": "",
+      "roles": {
+        "content": ""
+      },
+      "description": {
+        "content": ""
+      }
+    }
+  },
+  {
+    "id": 4,
+    "project_demo_url": "https://todo-list-simples.vercel.app/",
+    "title": "Todo List Simples",
+    "stack_items": ["React JS (Vite)"],
+    "pt": {
+      "subtitle": "",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": ""
+      }
+    },
+    "en": {
+      "subtitle": "",
+      "roles": {
+        "content": ""
+      },
+      "description": {
+        "content": ""
+      }
+    }
+  },
+  {
+    "id": 5,
+    "project_demo_url": "https://lista-compras-app.vercel.app/",
+    "title": "Minha Lista de Compras",
+    "stack_items": ["React JS (Vite)"],
+    "pt": {
+      "subtitle": "",
+      "roles": {
+        "content": "Desenvolvimento completo do projeto."
+      },
+      "description": {
+        "content": ""
+      }
+    },
+    "en": {
+      "subtitle": "",
+      "roles": {
+        "content": ""
+      },
+      "description": {
+        "content": ""
+      }
+    }
+  }
+]

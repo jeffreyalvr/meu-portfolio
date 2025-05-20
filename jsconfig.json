@@ -8,7 +8,8 @@
       "@pages/*": ["pages/*"],
       "@store/*": ["store/*"],
       "@language/*": ["language/*"],
-      "@util/*": ["util/*"]
+      "@util/*": ["util/*"],
+      "@works/*": ["content/*"]
     }
   },
   "include": ["src"]

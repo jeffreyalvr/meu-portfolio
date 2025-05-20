@@ -14,6 +14,7 @@ export default defineConfig({
       "@store": path.resolve(__dirname, "./src/store"),
       "@language": path.resolve(__dirname, "./src/language"),
       "@util": path.resolve(__dirname, "./src/util"),
+      "@works": path.resolve(__dirname, "./src/content"),
     },
   },
 });

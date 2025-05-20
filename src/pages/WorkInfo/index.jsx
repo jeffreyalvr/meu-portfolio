@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
+import { useParams } from "react-router-dom";
+
 import book from "@language/book.json";
 
 import Nav from "@components/Nav";
@@ -11,15 +13,21 @@ import { LinkButton } from "@components/Button";
 import { Title, SubTitle } from "@components/Text";
 
 import open_icon from "@assets/icons/open.png";
-import github_repo_browser_img from "@assets/thumbnails/github-repo-browser.png";
+
+import useLanguageStore from "@/store/useLanguageStore";
+
+import works from "@works/works.json";
 
 const WorkInfo = () => {
+  const { id } = useParams();
+  const idFromParams = parseInt(id);
+
+  const language = useLanguageStore((state) => state.language);
+
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
     useState(false);
 
   const [activeSection, setActiveSection] = useState(0);
-
-  const project_url = "https://github-repo-browser.vercel.app/";
 
   const section_works = useRef(null);
 
@@ -82,46 +90,69 @@ const WorkInfo = () => {
       <CompactHero />
       <Wrapper>
         <section className="move-up" ref={section_works}>
-          <Title>GitHub Repo Browser</Title>
+          <Title>{works.find((work) => work.id === idFromParams).title}</Title>
           <SubTitle>
-            Buscador de usuários e seus repositórios públicos no GitHub.
+            {works.find((work) => work.id === idFromParams).pt.subtitle}
           </SubTitle>
           <div className="separator"></div>
           <div className="project-summary">
             <div className="left-panel">
               <div className="item">
-                <b>Minha Atribuição</b>
-                <p>Desenvolvimento completo do projeto.</p>
+                <b>
+                  {language === "pt"
+                    ? book.pt.workInfo.wks_b_1
+                    : book.en.workInfo.wks_b_1}
+                </b>
+                <p>
+                  {
+                    works.find((work) => work.id === idFromParams).pt.roles
+                      .content
+                  }
+                </p>
               </div>
               <div className="item">
-                <b>Stack utilizada</b>
+                <b>
+                  {" "}
+                  {language === "pt"
+                    ? book.pt.workInfo.wks_b_2
+                    : book.en.workInfo.wks_b_2}
+                </b>
                 <div className="stack-container">
-                  <div className="tag">React JS (Vite)</div>
-                  <div className="tag">LocalStorage</div>
-                  <div className="tag">Axios</div>
-                  <div className="tag">API Github</div>
+                  {works
+                    .find((work) => work.id === idFromParams)
+                    .stack_items.map((stackItem) => (
+                      <div className="tag">{stackItem}</div>
+                    ))}
                 </div>
               </div>
             </div>
             <div className="right-panel">
-              <b>Descrição</b>
+              <b>
+                {" "}
+                {language === "pt"
+                  ? book.pt.workInfo.wks_b_3
+                  : book.en.workInfo.wks_b_3}
+              </b>
               <p>
-                A aplicação traz um ambiente organizado para busca de usuários
-                do GitHub, e lista alguns dos seus detalhes mais importantes:
-                repositórios públicos, os detalhes destes repositórios e outras
-                informações gerais do usuário, como: seguidores, quantidade de
-                repositórios e links.
+                {
+                  works.find((work) => work.id === idFromParams).pt.description
+                    .content
+                }
               </p>
               <LinkButton
                 overrideClass="invert-img-hover my-20"
-                text="Abrir demonstração"
+                text={
+                  language === "pt"
+                    ? book.pt.workInfo.wks_button
+                    : book.en.workInfo.wks_button
+                }
                 icon={open_icon}
-                url={project_url}
+                url=""
               />
             </div>
           </div>
           <div className="project-gallery">
-            <img src={github_repo_browser_img} />
+            <img src="" />
           </div>
         </section>
         <Footer />
