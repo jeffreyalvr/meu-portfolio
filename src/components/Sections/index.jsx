@@ -60,8 +60,8 @@ const Sections = ({ linkedin_url, sections }) => {
                 </span>
                 <span>
                   {language === "pt"
-                    ? book.pt.sections.sec_about_span_role
-                    : book.en.sections.sec_about_span_role}
+                    ? book.pt.sections.sec_about_span_education
+                    : book.en.sections.sec_about_span_education}
                 </span>
               </div>
             </div>

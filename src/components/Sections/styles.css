@@ -53,6 +53,7 @@ section .bio .description .tag span.title {
 section .bio .description .additional {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 section .bio .description span {
