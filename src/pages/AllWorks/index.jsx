@@ -12,11 +12,10 @@ import { ActionButton } from "@components/Button";
 import { Title, SubTitle } from "@components/Text";
 
 import open_icon from "@assets/icons/open.png";
-import thumb_img from "@assets/images/thumb.png";
 
 import useLanguageStore from "@/store/useLanguageStore";
 
-const Works = () => {
+const AllWorks = () => {
   const language = useLanguageStore((state) => state.language);
 
   const [floatingButtonVisibility, setFloatingButtonVisibility] =
@@ -107,9 +106,9 @@ const Works = () => {
 
           <div className="works">
             <div className="work-item">
-              <div className="item-container">
+              <div className="hover-overlay">
                 <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
+                  overrideClass="invert-img-hover"
                   text={
                     language === "pt"
                       ? book.pt.sections.sec_works_project_button
@@ -118,15 +117,14 @@ const Works = () => {
                   icon={open_icon}
                   func={handleViewProject}
                 />
-                <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb_img} />
+              <h3>Github Repo Browser</h3>
             </div>
 
             <div className="work-item">
-              <div className="item-container">
+              <div className="hover-overlay">
                 <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
+                  overrideClass="invert-img-hover"
                   text={
                     language === "pt"
                       ? book.pt.sections.sec_works_project_button
@@ -135,15 +133,14 @@ const Works = () => {
                   icon={open_icon}
                   func={handleViewProject}
                 />
-                <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb_img} />
+              <h3>Buscador Imagens</h3>
             </div>
 
             <div className="work-item">
-              <div className="item-container">
+              <div className="hover-overlay">
                 <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
+                  overrideClass="invert-img-hover"
                   text={
                     language === "pt"
                       ? book.pt.sections.sec_works_project_button
@@ -152,15 +149,14 @@ const Works = () => {
                   icon={open_icon}
                   func={handleViewProject}
                 />
-                <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb_img} />
+              <h3>Weather App</h3>
             </div>
 
             <div className="work-item">
-              <div className="item-container">
+              <div className="hover-overlay">
                 <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
+                  overrideClass="invert-img-hover"
                   text={
                     language === "pt"
                       ? book.pt.sections.sec_works_project_button
@@ -169,15 +165,14 @@ const Works = () => {
                   icon={open_icon}
                   func={handleViewProject}
                 />
-                <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb_img} />
+              <h3>Todo List Simples</h3>
             </div>
 
             <div className="work-item">
-              <div className="item-container">
+              <div className="hover-overlay">
                 <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
+                  overrideClass="invert-img-hover"
                   text={
                     language === "pt"
                       ? book.pt.sections.sec_works_project_button
@@ -186,60 +181,8 @@ const Works = () => {
                   icon={open_icon}
                   func={handleViewProject}
                 />
-                <h3>Github Repo Browser</h3>
               </div>
-              <img className="banner" src={thumb_img} />
-            </div>
-
-            <div className="work-item">
-              <div className="item-container">
-                <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
-                  text={
-                    language === "pt"
-                      ? book.pt.sections.sec_works_project_button
-                      : book.en.sections.sec_works_project_button
-                  }
-                  icon={open_icon}
-                  func={handleViewProject}
-                />
-                <h3>Github Repo Browser</h3>
-              </div>
-              <img className="banner" src={thumb_img} />
-            </div>
-
-            <div className="work-item">
-              <div className="item-container">
-                <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
-                  text={
-                    language === "pt"
-                      ? book.pt.sections.sec_works_project_button
-                      : book.en.sections.sec_works_project_button
-                  }
-                  icon={open_icon}
-                  func={handleViewProject}
-                />
-                <h3>Github Repo Browser</h3>
-              </div>
-              <img className="banner" src={thumb_img} />
-            </div>
-
-            <div className="work-item">
-              <div className="item-container">
-                <ActionButton
-                  overrideClass="invert-img-hover my-20 hidden"
-                  text={
-                    language === "pt"
-                      ? book.pt.sections.sec_works_project_button
-                      : book.en.sections.sec_works_project_button
-                  }
-                  icon={open_icon}
-                  func={handleViewProject}
-                />
-                <h3>Github Repo Browser</h3>
-              </div>
-              <img className="banner" src={thumb_img} />
+              <h3>Minha Lista de Compras</h3>
             </div>
           </div>
         </section>
@@ -252,4 +195,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default AllWorks;
